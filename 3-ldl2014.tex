@@ -30,5 +30,146 @@ CHECK ACCEPTANCE RATE
 
 LDL-2014 is collocated with the 9th International Conferences for Language Resources and Evaluation (LREC-2014), and at this edition, we put a particular focus on multilingual knowledge resources and ...
 
+TODO: reorganize in accordance with the datatype categories in the diagram ?
+
+The 10 accepted papers address a wide range of problems in the area of NLP and 
+(L)LOD. These are: modeling, representation, analysis and publishing of various 
+data or metadata through LOD. The most popular issues seem to be managing lexical 
+databases as RDF lexicon-to-ontology standards (such as LEMON). Some papers focus 
+on manipulating specific databases, such as etymological, diachronic, web, movies, 
+and grammar terminology. Localization and cross-lingual issues are also considered. 
+Let us present briefly the papers.
+
+The paper A BRIEF SURVEY OF MULTIMEDIA ANNOTATION LOCALISATION ON THE WEB OF LINKED 
+DATA (Lefman, Lewis and Sasaki) investigates the localization of multimedia ontologies 
+and Linked Data frameworks focusing on Flickr. The authors view Linguistic Linked 
+Data as a mediator between multimedia annotation in social media and the Web of 
+Linked Data. The paper FROM CLARIN COMPONENT METADATA TO LINKED OPEN DATA (Durèo 
+and Windhouwer) presents in detail the ways of relating CMDI resource descriptions 
+into LOD. Thus, the metadata is RDF-ized and visible via SPARQL endpoints. The 
+paper PUBLISHING AND LINKING WORDNET USING LEMON AND RDF (McCrae, Fellbaum and 
+Cimiano) proposes a strategy for publishing Princeton Wordnet as linked data through 
+an open model. The advantage of this approach is that it provides linking also 
+to the resources which have been already integrated into Wordnet. The paper USING 
+LEMON TO MODEL LEXICAL SEMANTIC SHIFT IN DIACHRONIC LEXICAL RESOURCES (Khan, Boschetti 
+and Frontini) proposes an ontology-based extension of the LEMON model (called LEMON-DIA) 
+for representing the lexical semantic change in temporal context. The focus is 
+on the implementation of philosophical properties, such as `perdurant'. The paper 
+TYPOLOGY WITH GRAPHS AND MATRICES concentrates on the three-fold representation 
+(graphs, tables, matrices) of the same data source. Linguistic databases are accessed 
+via Linked Data. The paper ATTACHING TRANSLATIONS TO PROPER LEXICAL SENSES IN DBNARY 
+(Tchechmedjiev, Sérasset, Goulian and Schwab) presents the DBNARY project, which 
+aims at extracting LOD from Wiktionaries of various languages. More specifically, 
+the authors present a similarity technique for disambiguation of linked translations. 
+The paper TOWARDS A LINKED OPEN DATA REPRESENTATION OF A GRAMMAR TERMS INDEX (Jettka, 
+Kuropka, Vertan and Zinsmeister) introduces an ongoing work on a Linked Open Data 
+set of German grammar terms, called HyperGramm. The proposed strategy is applicable 
+also to other languages with the availability of similar resources. The paper RELEASING 
+GENRE KEYWORDS OF RUSSIAN MOVIE DESCRIPTIONS AS LINGUISTIC LINKED OPEN DATA: AN 
+EXPERIENCE REPORT (Kutuzov and Ionov) describes a work on publishing genre-classified 
+movie keywords as LOD using the LEMON model. The resource is also linked to Russian 
+DBPedia Wiktionary. The paper THE CROSS LINGUISTIC LINKED DATA PROJECT (Forkel) 
+introduces a data model within an ongoing initiative on establishing a platform 
+for interoperability among various language resources. In this context LOD plays 
+the important role of publishing strategy for the datasets. The paper LINKING ETYMOLOGICAL 
+DATABASES. A CASE STUDY IN GERMANIC (Chiarcos and Sukhareva) focuses on first attempt 
+of modeling German etymological datasets in LOD. The work is challenging, since 
+it handles different language stages. LEMON was implemented as a basic standard, 
+but it will be further developed into LEMON-conformant one in order to meet the 
+diachronic data requirements.
 
 
+
+
+\subsection{Data challenge}
+
+In addition to the main workshop, we introduced an open challenge for the creation of datasets for linguistics according to linked data principles. This challenge required submissions of new linked datasets and was evaluated by reviewers on a number of technical grounds as follows: 
+
+\baselineskip=13pt
+In addition to the main workshop, we introduced an open challenge for the creation 
+of datasets for linguistics according to linked data principles. This challenge 
+required submissions of new linked datasets and was evaluated by reviewers on a 
+number of technical grounds as follows: 
+
+\vspace{13pt}
+\leftskip=36pt
+\parindent=-18pt
+{\large{}1. }Availability
+
+\leftskip=72pt
+{\large{}? }Use of Linked Data and RDF.
+
+{\large{}? }Hosted on a publicly accessible server and be available both during 
+the period of the evaluation and beyond.
+
+{\large{}? }Use of an open license.
+
+\leftskip=36pt
+{\large{}2. }Quality of Resource
+
+\leftskip=72pt
+{\large{}? }Represents useful linguistically or NLP-relevant information.
+
+{\large{}? }Reuses relevant standards and models.
+
+{\large{}? }Contains complex, non-trivial information, e.g., multiple levels 
+of annotation.
+
+\leftskip=36pt
+{\large{}3. }Linking
+
+\leftskip=72pt
+{\large{}? }Links to external resources.
+
+{\large{}? }Reuse of existing properties and categories.
+
+\leftskip=36pt
+{\large{}4. }Impact/usefulness of the resource
+
+\leftskip=72pt
+{\large{}? }Relevant and likely to be reused by many researchers in NLP and wider 
+fields.
+
+{\large{}? }Uses linked data to improve the quality of and access to the resource.
+
+\leftskip=36pt
+{\large{}5. }Originality
+
+\leftskip=72pt
+{\large{}? }Represents a type of resource or a community currently underrepresented 
+in (L)LOD cloud activities
+
+{\large{}? }Facilitates novel and unforeseen applications or use cases (as described 
+by the authors) enabled through Linked Data technology.
+
+\vspace{13pt}
+\leftskip=0pt
+\parindent=0pt
+This year there were five accepted submissions to the challenge and from those 
+we chose two joint winners and one highly commended paper. The winners this year 
+were ``DBnary: Wiktionary as Linked Data for 12 Language Editions with Enhanced 
+Translation Relations'' by Gilles Sérraset and Andon Tchechmedjiev and ``Linked-data 
+based domain-specific sentiment lexicons'' by Gabriela Vulcu, Raul Lario Monje, 
+Mario Munoz, Paul Buitelaar and Carlos A. Iglesias, describing the EuroSentiment 
+lexicon. The DBnary work describes the extraction of Multilingual data from Wiktionary 
+based on 12 language editions of Wiktionary, and as such represents a large and 
+important lexical resource that should have application in many linguistic areas. 
+The winner described the creation of a lexicon for the EuroSentiment project, which 
+tackles the important field of sentiment analysis through the use of sophisticated 
+linguistic processing. The resource described extends the \textit{lemon} model 
+with the MARL vocabulary to provide a lexicon that is unique in the field of sentiment 
+analysis due to its linguistic sophistication. Finally, we also highly commend 
+the work presented in ``A multilingual semantic network as linked data: Lemon-BabelNet'' 
+by Maud Ehrmann, Francesco Cecconi, Daniele Vannelle, John P. McCrae, Philipp Cimiano 
+and Roberto Navigli, which describes the expression of BabelNet using the \textit{lemon} 
+vocabulary. BabelNet is one of the largest lexical resources created to date and 
+its linked data version at over 1 billion triples will be one of the largest resources 
+in the LLOD cloud. As such, the clear usefulness of the resource as a target for 
+linking and also the use of the widely-used \textit{lemon} model make this conversion 
+a highly valuable resource for the community as noted by the reviewers. Finally, 
+we will note that our two runner-up participants ``PDEV-LEMON: A linked data implementation 
+of the pattern dictionary of English verbs based on the \textit{lemon} model'' 
+by Ismail El Maarouf et al., and ``Linked Hypernyms Dataset - Generation Framework 
+and Use Cases'' by TomÁš Kliegr et al. were also well received as resources that 
+continue to grow the linguistic linked open data cloud and are likely to find application 
+for a number of works in linguistics and natural language processing.

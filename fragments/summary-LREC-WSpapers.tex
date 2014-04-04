@@ -1,0 +1,147 @@
+%&pdfLaTeX
+% !TEX encoding = UTF-8 Unicode
+\documentclass{article}
+\usepackage{ifxetex}
+\ifxetex
+\usepackage{fontspec}
+\setmainfont[Mapping=tex-text]{STIXGeneral}
+\else
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\fi
+\usepackage{textcomp}
+
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\begin{document}
+
+\vspace{24pt}
+\textbf{LOCALIZATION and METADATA}
+
+\vspace{12pt}
+A BRIEF SURVEY OF MULTIMEDIA ANNOTATION LOCALISATION ON THE WEB OF
+
+LINKED DATA
+
+Gary Lefman, David Lewis and Felix Sasaki
+
+\vspace{12pt}
+FROM CLARIN COMPONENT METADATA TO LINKED OPEN DATA
+
+Matej Durco and Menzo Windhouwer
+
+\vspace{24pt}
+\textbf{LEXICAL RESOURCES in LEMON}
+
+\vspace{12pt}
+PUBLISHING AND LINKING WORDNET USING LEMON AND RDF
+
+John Philip McCrae, Christiane Fellbaum and Philipp Cimiano
+
+\vspace{12pt}
+USING LEMON TO MODEL LEXICAL SEMANTIC SHIFT IN DIACHRONIC LEXICAL
+
+RESOURCES
+
+Fahad Khan, Federico Boschetti and Francesca Frontini
+
+\vspace{12pt}
+\textbf{MORE RESOURCES INTO LOD}
+
+\vspace{12pt}
+TYPOLOGY WITH GRAPHS AND MATRICES
+
+Steven Moran and Michael Cysouw
+
+\vspace{12pt}
+ATTACHING TRANSLATIONS TO PROPER LEXICAL SENSES IN DBNARY
+
+Andon Tchechmedjiev, Gilles Sérasset, Jérôme Goulian and Didier
+
+Schwab
+
+\vspace{12pt}
+TOWARDS A LINKED OPEN DATA REPRESENTATION OF A GRAMMAR TERMS INDEX
+
+Daniel Jettka, Karim Kuropka, Cristina Vertan and Heike Zinsmeister
+
+\vspace{12pt}
+RELEASING GENRE KEYWORDS OF RUSSIAN MOVIE DESCRIPTIONS AS LINGUISTIC
+
+LINKED OPEN DATA: AN EXPERIENCE REPORT
+
+Andrey Kutuzov and Maxim Ionov
+
+\vspace{12pt}
+\textbf{SPECIFIC USES of Linguistic Data in LOD}
+
+\vspace{12pt}
+THE CROSS-LINGUISTIC LINKED DATA PROJECT
+
+Robert Forkel
+
+\vspace{12pt}
+LINKING ETYMOLOGICAL DATABASES. A CASE STUDY IN GERMANIC
+
+Christian Chiarcos and Maria Sukhareva
+
+\vspace{12pt}
+\begin{center}
+\textbf{SUMMARY}
+\end{center}
+
+\vspace{24pt}
+\baselineskip=12pt
+\leftskip=0pt
+The 10 accepted papers address a wide range of problems in the area of NLP and 
+(L)LOD. These are: modeling, representation, analysis and publishing of various 
+data or metadata through LOD. The most popular issues seem to be managing lexical 
+databases as RDF lexicon-to-ontology standards (such as LEMON). Some papers focus 
+on manipulating specific databases, such as etymological, diachronic, web, movies, 
+and grammar terminology. Localization and cross-lingual issues are also considered. 
+Let us present briefly the papers.
+
+The paper A BRIEF SURVEY OF MULTIMEDIA ANNOTATION LOCALISATION ON THE WEB OF LINKED 
+DATA (Lefman, Lewis and Sasaki) investigates the localization of multimedia ontologies 
+and Linked Data frameworks focusing on Flickr. The authors view Linguistic Linked 
+Data as a mediator between multimedia annotation in social media and the Web of 
+Linked Data. The paper FROM CLARIN COMPONENT METADATA TO LINKED OPEN DATA (Durèo 
+and Windhouwer) presents in detail the ways of relating CMDI resource descriptions 
+into LOD. Thus, the metadata is RDF-ized and visible via SPARQL endpoints. The 
+paper PUBLISHING AND LINKING WORDNET USING LEMON AND RDF (McCrae, Fellbaum and 
+Cimiano) proposes a strategy for publishing Princeton Wordnet as linked data through 
+an open model. The advantage of this approach is that it provides linking also 
+to the resources which have been already integrated into Wordnet. The paper USING 
+LEMON TO MODEL LEXICAL SEMANTIC SHIFT IN DIACHRONIC LEXICAL RESOURCES (Khan, Boschetti 
+and Frontini) proposes an ontology-based extension of the LEMON model (called LEMON-DIA) 
+for representing the lexical semantic change in temporal context. The focus is 
+on the implementation of philosophical properties, such as `perdurant'. The paper 
+TYPOLOGY WITH GRAPHS AND MATRICES concentrates on the three-fold representation 
+(graphs, tables, matrices) of the same data source. Linguistic databases are accessed 
+via Linked Data. The paper ATTACHING TRANSLATIONS TO PROPER LEXICAL SENSES IN DBNARY 
+(Tchechmedjiev, Sérasset, Goulian and Schwab) presents the DBNARY project, which 
+aims at extracting LOD from Wiktionaries of various languages. More specifically, 
+the authors present a similarity technique for disambiguation of linked translations. 
+The paper TOWARDS A LINKED OPEN DATA REPRESENTATION OF A GRAMMAR TERMS INDEX (Jettka, 
+Kuropka, Vertan and Zinsmeister) introduces an ongoing work on a Linked Open Data 
+set of German grammar terms, called HyperGramm. The proposed strategy is applicable 
+also to other languages with the availability of similar resources. The paper RELEASING 
+GENRE KEYWORDS OF RUSSIAN MOVIE DESCRIPTIONS AS LINGUISTIC LINKED OPEN DATA: AN 
+EXPERIENCE REPORT (Kutuzov and Ionov) describes a work on publishing genre-classified 
+movie keywords as LOD using the LEMON model. The resource is also linked to Russian 
+DBPedia Wiktionary. The paper THE CROSS LINGUISTIC LINKED DATA PROJECT (Forkel) 
+introduces a data model within an ongoing initiative on establishing a platform 
+for interoperability among various language resources. In this context LOD plays 
+the important role of publishing strategy for the datasets. The paper LINKING ETYMOLOGICAL 
+DATABASES. A CASE STUDY IN GERMANIC (Chiarcos and Sukhareva) focuses on first attempt 
+of modeling German etymological datasets in LOD. The work is challenging, since 
+it handles different language stages. LEMON was implemented as a basic standard, 
+but it will be further developed into LEMON-conformant one in order to meet the 
+diachronic data requirements.
+
+\newpage
+
+\end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Cygwin) (format=pdflatex 2013.10.26)  4 APR 2014 22:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Cygwin) (format=pdflatex 2013.10.26)  4 APR 2014 23:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -585,31 +585,44 @@ Underfull \hbox (badness 1199) in paragraph at lines 100--101
 \OT1/ptm/m/n/10 lated re-sources was ac-com-pa-nied and fa-cil-i-tated by a
  []
 
-[4 <./llod-colored.png>]) (./3-ldl2014.tex) (./main.bbl
+[4 <./llod-colored.png>]) (./3-ldl2014.tex
+Underfull \hbox (badness 1275) in paragraph at lines 43--80
+\OT1/ptm/m/n/10 TO LINKED OPEN DATA (Dur[]eo and Wind-houwer)
+ []
+
+[5]
+Underfull \hbox (badness 1715) in paragraph at lines 139--141
+ []\OT1/ptm/m/n/12 ? \OT1/ptm/m/n/10 Rep-re-sents a type of re-source or a
+ []
+
+
+Underfull \hbox (badness 2050) in paragraph at lines 139--141
+ \OT1/ptm/m/n/10 com-mu-nity cur-rently un-der-rep-re-sented
+ []
+
+) [6] (./main.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 4--9
 \OT1/ptm/m/n/10 URL $\OT1/pcr/m/n/10 http : / / www . w3 . org / DesignIssues /
 
  []
 
-[5]) [6
-
-] [7] (./main.aux) ) 
+) [7] [8] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 3148 strings out of 493315
- 39958 string characters out of 6143674
- 108682 words of memory out of 5000000
- 6490 multiletter control sequences out of 15000+600000
- 31084 words of font info for 70 fonts, out of 8000000 for 9000
+ 3152 strings out of 493315
+ 39988 string characters out of 6143674
+ 110682 words of memory out of 5000000
+ 6493 multiletter control sequences out of 15000+600000
+ 32162 words of font info for 71 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  42i,10n,26p,1209b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/sh
-are/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/
-type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.
-pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (7 pages, 733031 bytes).
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
+r/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fo
+nts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utm
+r8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (8 pages, 740117 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
+ 49 PDF objects out of 1000 (max. 8388607)
+ 33 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

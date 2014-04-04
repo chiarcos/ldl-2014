@@ -1,0 +1,144 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citename{Berners-Lee}2006]{bernersLee2006_linkeddata}
+Berners-Lee, T.
+\newblock (2006).
+\newblock Design issues: Linked data.
+\newblock URL \url{http://www.w3.org/DesignIssues/LinkedData.html} (July 31,
+  2012).
+
+\bibitem[\protect\citename{Bird and Liberman}2001]{bird01}
+Bird, S. and Liberman, M.
+\newblock (2001).
+\newblock A formal framework for linguistic annotation.
+\newblock {\em Speech Communication}, 33(1-2):23--60.
+
+\bibitem[\protect\citename{Burchardt \bgroup et al.\egroup
+  }2008]{burchardt2008formalising}
+Burchardt, A., Pad{\'o}, S., Spohr, D., Frank, A., and Heid, U.
+\newblock (2008).
+\newblock Formalising multi-layer corpora in {OWL/DL} -- lexicon modelling,
+  querying and consistency control.
+\newblock In {\em 3rd International Joint Conference on NLP (IJCNLP 2008)},
+  Hyderabad, India.
+
+\bibitem[\protect\citename{Chiarcos \bgroup et al.\egroup }to
+  appear]{chiarcos-etal2012-ntrolr}
+Chiarcos, C., McCrae, J., Cimiano, P., and Fellbaum, C.
+\newblock (to appear).
+\newblock Towards open data for linguistics: Linguistic linked data.
+\newblock In Oltramari, A., Lu-Qin, Vossen, P., and Hovy, E., editors, {\em New
+  Trends of Research in Ontologies and Lexical Resources}. Springer,
+  Heidelberg.
+
+\bibitem[\protect\citename{Chiarcos}2012a]{chiarcos-2012-ldl-powla}
+Chiarcos, C.
+\newblock (2012a).
+\newblock Interoperability of corpora and annotations.
+\newblock In Chiarcos, C., Nordhoff, S., and Hellmann, S., editors, {\em Linked
+  Data in Linguistics}, pages 161--179. Springer, Heidelberg.
+
+\bibitem[\protect\citename{Chiarcos}2012b]{chiarcos-2012-olia-lrec}
+Chiarcos, C.
+\newblock (2012b).
+\newblock Ontologies of linguistic annotation: Survey and perspectives.
+\newblock In {\em 8th International Conference on Language Resources and
+  Evaluation (LREC-2012)}, pages 303--310, Istanbul, Turkey, May.
+
+\bibitem[\protect\citename{Chiarcos}2012c]{chiarcos2012-eswc-powla}
+Chiarcos, C.
+\newblock (2012c).
+\newblock {POWLA: Modeling} linguistic corpora in {OWL/DL}.
+\newblock In {\em 9th Extended Semantic Web Conference (ESWC-2012)}, pages
+  225--239, Heraklion, Crete, May.
+
+\bibitem[\protect\citename{Dostert}1955]{dostert1955georgetown}
+Dostert, L.
+\newblock (1955).
+\newblock The {Georgetown-IBM} experiment.
+\newblock In Locke, W. and Booth, A., editors, {\em Machine Translation of
+  Languages}, pages 124--135. John Wiley \& Sons, New York.
+
+\bibitem[\protect\citename{Farrar and Langendoen}2003]{farrar-langendoen03}
+Farrar, S. and Langendoen, T.
+\newblock (2003).
+\newblock {Markup and the GOLD ontology}.
+\newblock In {\em EMELD Workshop on Di\-gi\-ti\-zing and Annotating Text and
+  Field Recordings}. Michigan State University, July.
+
+\bibitem[\protect\citename{Francis and Kucera}1964]{francis-kucera1964}
+Francis, W.~N. and Kucera, H.
+\newblock (1964).
+\newblock {B}rown {C}orpus manual.
+\newblock Technical report, Brown University, Providence, Rhode Island.
+\newblock revised edition 1979.
+
+\bibitem[\protect\citename{Gangemi \bgroup et al.\egroup
+  }2003]{gangemi2003ontowordnet}
+Gangemi, A., Navigli, R., and Velardi, P.
+\newblock (2003).
+\newblock {The OntoWordNet project: Extension and axiomatization of conceptual
+  relations in {W}ord{N}et}.
+\newblock In Meersman, R. and Tari, Z., editors, {\em Pro\-cee\-dings of On the
+  Move to Meaningful Internet Systems (OTM2003)}, pages 820--838, Catania,
+  Italy, November.
+
+\bibitem[\protect\citename{Greenberg}1960]{greenberg60-quant}
+Greenberg, J.
+\newblock (1960).
+\newblock A quantitative approach to the morphological typology of languages.
+\newblock {\em International Journal of American Linguistics}, 26:178--194.
+
+\bibitem[\protect\citename{Hellmann \bgroup et al.\egroup
+  }2012]{hellmann-2012-ekaw}
+Hellmann, S., Lehmann, J., and Auer, S.
+\newblock (2012).
+\newblock Linked-data aware {URI} schemes for referencing text fragments.
+\newblock In {\em 18th International Conference on Knowledge Engineering and
+  Knowledge Management (EKAW-2012)}, Galway, Ireland.
+
+\bibitem[\protect\citename{Ide and
+  Pustejovsky}2010]{ide-pustejovsky2010-interoperability}
+Ide, N. and Pustejovsky, J.
+\newblock (2010).
+\newblock What does interoperability mean, anyway? {Toward} an operational
+  definition of interoperability.
+\newblock In {\em Second International Conference on Global Interoperability
+  for Language Resources (ICGL 2010)}, Hong Kong, China.
+
+\bibitem[\protect\citename{Ide and Suderman}2007]{ide-suderman07-graf}
+Ide, N. and Suderman, K.
+\newblock (2007).
+\newblock {GrAF}: {A} graph-based format for linguistic annotations.
+\newblock In {\em 1st Linguistic Annotation Workshop (LAW 2007)}, pages 1--8,
+  Prague, Czech Republic.
+
+\bibitem[\protect\citename{Morris}1969]{morris1969}
+Morris, W., editor.
+\newblock (1969).
+\newblock {\em The {American} Heritage Dictionary of the {English} Language}.
+\newblock Houghton Mifflin, New York.
+
+\bibitem[\protect\citename{Prud'Hommeaux and Seaborne}2008]{prud2008sparql}
+Prud'Hommeaux, E. and Seaborne, A.
+\newblock (2008).
+\newblock {SPARQL query language for RDF}.
+\newblock {\em W3C working draft}, 4(January).
+
+\bibitem[\protect\citename{Windhouwer and Wright}2012]{windhouwer-wright2012}
+Windhouwer, M. and Wright, S.
+\newblock (2012).
+\newblock Linking to linguistic data categories in {ISO}cat.
+\newblock In Chiarcos, C., Nordhoff, S., and Hellmann, S., editors, {\em Linked
+  Data in Linguistics}, pages 99--107. Springer, Heidelberg.
+
+\bibitem[\protect\citename{Wright}2004]{wright2004global}
+Wright, S.
+\newblock (2004).
+\newblock {A global data category registry for interoperable language
+  resources}.
+\newblock In {\em Pro\-cee\-dings of the Fourth Language Resources and
+  Eva\-lu\-ation Con\-fe\-rence (LREC 2004)}, pages 123--126, Lisboa, Portugal,
+  May.
+
+\end{thebibliography}

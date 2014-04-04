@@ -1,0 +1,127 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage{lrec2014}
+\usepackage{graphicx}
+% for eps graphics
+
+\usepackage{epstopdf}
+\usepackage{url}
+\usepackage{latexsym}
+
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{enumerate}
+\usepackage[utf8]{inputenc}
+\usepackage{arydshln} % the \hdashline and \cdashline commands which are the dashed counterparts of \hline and \cline
+
+% citations
+
+%% works
+%\usepackage[authoryear]{natbib} %% should correspond to ACL 2013's \cite (author, year) vs. \shortcite (year)
+%\usepackage[numbers]{natbib} %% should correspond to ACL 2013's \cite (author, year) vs. \shortcite (year)
+%\newcommand{\citeparg}[2][]{\citep[#1]{#2}}
+
+%% commands
+
+\def\citep{\cite}
+\def\citet{\newcite}
+
+\newcommand{\todo}[1]{}
+\newcommand{\onto}[1]{\texttt{\small #1}}
+\newcommand{\word}[1]{\textsl{#1}}
+\newcommand{\textem}[1]{\emph{#1}}
+\newcommand{\tablesize}{\footnotesize}
+\newcommand{\urly}{\tt}
+\newcommand{\ign}[1]{}
+
+%%%%%%%%%%%%%%%%%
+% Anonymization %
+%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%
+% Content %
+%%%%%%%%%%%
+
+\title{Linked Data in Linguistics 2014. Introduction and Overview}
+
+\name{Christian Chiarcos, John McCrae, Elena Montiel, Antonio Branco, Nicoletta Calzolari, Petya Osenova, Kiril Simov, Cristina Vertan}
+
+\address{ Goethe-Universität Frankfurt am Main, 
+		  Universität Bielefeld, 
+		  Affiliation3 \\
+		  %
+		  Germany,  
+		  Germany,
+		  Address3 \\
+		  %
+          \url{chiarcos@uni-frankfurt.de}, 
+		  \url{jmcrae@cit-ec.uni-bielefeld.de},
+		  author2@zzz.edu, author3@hhh.com,
+		  \url{cimiano@cit-ec.uni-bielefeld.de},
+		  \\}
+
+\input{0-abstract}
+
+\begin{document}
+
+\maketitleabstract
+
+\input{1-background}
+\input{2-llod}
+\input{3-ldl2014}
+
+\section*{Acknowledgements}
+
+We thank the organizers of the 9th International Conference on Language Resource and Evaluation (LREC-2014) for hosting and supporting LDL-2014, and in particular for joining us in the promotion of Linked Open Data in our field by establishing it as a main topic of the main conference.
+
+The LDL workshop series is organized by the Open Linguistics Working Group (OWLG) of the Open Knowledge Foundation. LDL-2014 was supported by the LIDER project ..., as well as the QTLeap project ...
+
+We thank the OWLG and its members for active contributions to the LLOD cloud, to the workshop and beyond. In particular, we have to thank the contributors, the program committee and the organizers of the data challenge for their invaluable work and engagement.
+
+The introduction into Linked Data given in Sect.\ \ref{sec-background} is a revised and updated version of earlier introductions into the field, most noteably ... LDL-2013.
+
+\bibliographystyle{lrec2014}
+\bibliography{bib}
+
+\newpage
+
+\begin{figure*}
+\begin{minipage}{\textwidth}
+\section*{LDL-2013 Organizing Committee}
+
+\smallskip
+
+Christian Chiarcos (Goethe-Universität Frankfurt am Main, Germany)
+
+John McCrae (Universität Bielefeld, Germany)
+
+...
+
+\bigskip
+
+\section*{LDL-2014 Program Committee}
+
+\smallskip
+
+...
+
+\pagebreak
+
+\section*{Data Challenge Organizers}
+
+\smallskip
+
+Philipp Cimiano (Universität Bielefeld, Germany)
+
+Christian Chiarcos (Goethe-Universität Frankfurt am Main, Germany)
+
+John McCrae (Universität Bielefeld, Germany)
+
+\bigskip
+
+\section*{Data Challenge Committee}
+
+\smallskip
+
+\end{minipage}
+\end{figure*}
+\end{document}
+

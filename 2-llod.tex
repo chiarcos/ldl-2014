@@ -7,16 +7,40 @@ As the OWLG organizes the LDL workshop series as a vehicle to facilitate this pr
 
 \subsection{The LLOD Cloud}
 
-Aside from benefits arising from the actual \emph{linking} of linguistic resources, various linguistic resources from very different fields have been provided in RDF and related standards in the last decade. In particular, this is the case for \textbf{lexical resources} (Fig.\ \ref{figI18nLOD}, \textsc{lexicon}), e.g., WordNet \citep{gangemi2003ontowordnet}, which represent a cornerstone of the Semantic Web and which are firmly integrated in the Linked Open Data (LOD) cloud. In a broader sense, also general knowledge bases from the LOD such as the DBpedia have been rendered as lexical resources, because of their immanent relevance for Natural Language Processing tasks such as Named Entity Recognition or Anaphora Resolution. Other types of linguistically relevant resources with less importance to AI and Knowledge Representation, however, are not a traditional part of the LOD cloud and motivate the creation of a sub-cloud dedicated to linguistic resources.
+In our current, informal understanding, \textbf{Linguistic Data} is pragmatically defined as any kind of resource considered relevant for linguistic research or Natural Language Processing tasks. 
+Our assessment of relevance follows the classification of resources provided by data providers or the community, as reflected, for example, in tags assigned to resources at \url{datahub.io}, the meta data repository from which the LLOD cloud is currently being built. During diagram compilation, ressources associated with the OWLG, or with tags like `LLOD', `linguistics', etc. are gathered, stored in a JSON document, categorized according to manually defined classification rules, and plotted and reformatted using a GraphML editor.\footnote{
+	The extraction scripts can be found under \url{https://github.com/jmccrae/llod-cloud.py}.
+}
 
-As such, the Linked Data paradigm also facilitates the management of information about language (Fig.\ \ref{figI18nLOD}, \textsc{language\_description}), i.e., linguistic terminology and linguistic databases. \textbf{Terminology repositories} serve an important role to establish conceptual interoperability between language resources. If resource-specific annotations or abbreviations are expanded into references to repositories of linguistic terminology and/or metadata categories, linguistic annotations, grammatical features and metadata specifications become more easily comparable. %Linguistic databases and annotated corpora linked to shared terminology repositories may help researchers from one particular community, say, NLP, to access and to re-use resources built up in the context of another linguistic sub-discipline, e.g., typology. 
-Important repositories developed by different communities include GOLD \citep{farrar-langendoen03} and ISOcat \citep{wright2004global,windhouwer-wright2012}, yet, only recently these terminology repositories were put in relation with each other using Linked Data principles and with linguistic resources, e.g., within the OLiA architecture \citep{chiarcos-2012-olia-lrec}.
-\textbf{Linguistic databases} are a particularly heterogeneous group of linguistic resources; they contain complex and manifold types of information, e.g., feature structures that represent typologically relevant phenomena, along with examples for their illustration and annotations (glosses) and translations applied to these examples (structurally comparable to corpus data), or word lists (structurally comparable to lexical-semantic resources). RDF as a generic representation formalism is thus particularly appealing for this class of resources.
+Among these data sets, we encourage the use of \textbf{open} licenses and limit the diagram to such data sets. As defined by the Open Definition, ``openness'' refers to ``[any] piece of content or data [that] is open if anyone is free to use, reuse, and redistribute it -- subject only, at most, to the requirement to attribute and share-alike.''\footnote{\url{http://opendefinition.org}}
 
-Finally, for \textbf{linguistic corpora} (Fig.\ \ref{figI18nLOD}, \textsc{corpora}), the potential of the Linked Data paradigm for modeling, processing and querying of corpora is immense, and RDF conversions of semantically annotated corpora have been proposed early \citep{burchardt2008formalising}. \index{RDF (Resource Description Framework)}RDF provides a graph-based data model as required for the interoperable representation of arbitrary kinds of annotation \citep{bird01,ide-suderman07-graf}, and this flexibility makes it a promising candidate for a general means of representation for corpora with complex and heterogeneous annotations. \index{RDF (Resource Description Framework)}RDF does not only establish interoperability between annotations within a corpus, but also between corpora and other linguistic resources \citep{chiarcos-2012-ldl-powla}. In comparison to other types of linguistic resources, corpora are currently underrepresented in the LLOD cloud, but the development of schemes for corpora and/or NLP annotations represents an active line of research \citep{chiarcos2012-eswc-powla,hellmann-2012-ekaw} also addressed in the workshop.
+Linguistic \textbf{Linked} Open Data, then, comprises resources that are provided under an open license and published in conformance with the Linked Data principles as stated above.
+Typically, these do not represent resources which are RDF-native, but resources that have been transformed into Linked Data. 
 
-%We apply the following criteria for a new linguistic resource to be included in the LLOD cloud diagram:
-%(1) The data is resolvable through HTTP, (2) it is provided as RDF, (3) it contains links to another data set in the diagram, and (4) the entire data set must be available. ...
+This also has an impact on the types of linguistic resources considered here, in particular the concept of \textbf{corpora}:
+In empirical linguistics and NLP, \emph{collections of primary data} represent the elementary foundation of research and development. 
+Yet, while it is possible to represent primary data such as plain text in RDF, this is not necessarily the most efficient way of doing so -- also given the fact that specialized XML-based standards such as the Text Encoding Iniative\footnote{
+	\url{http://www.tei-c.org}
+}
+are well-established and widely used.
+However, RDF provides highly flexible data structures that can be employed to represent linguistic annotations of arbitrary complexity. 
+As understood \emph{here}, a `corpus' is thus always a linguistically analyzed resource:
+Along with classical representations where both annotations \emph{and} primary data are modeled in RDF (e.g., in the seminal study of \citep{burchardt2008formalising}), 
+but also hybrid data sets where only annotations are provided as Linked Data, but the primary data is stored in a conventional format (e.g., \citep{cassidy2010rdf}).
+At the moment, corpora in the LLOD cloud seem to be relatively rare (see `CORPUS' resources in Fig.\ \ref{figI18nLOD}), 
+but this only reflects the fact that several corpora had to be excluded from the diagram because they were not linked yet with other LLOD data sets such as lexical resources or repositories of annotation terminology.
+
+Beyond representing linguistic analyses for collections of examples, text fragments, or entire discourses, 
+the Linked Data paradigm particularly facilitates the management of \textbf{information about language and language resources} (`METADATA' in Fig.\ \ref{figI18nLOD}, \textsc{language\_description}).
+These include linguistic databases (collections of features and inventories of individual languages, e.g., from linguistic typology), repositories of linguistic terminology (e.g., grammatical categories or language identifiers), and metadata about language resources (incl. bibliographical data).
+While bibliographical data and terminology management represent classical Linked Data applications, our \emph{databases} are a specifically linguistic resource:
+Databases of features of individual languages are a particularly heterogeneous group of linguistic resources; they contain complex and manifold types of information, e.g., feature structures that represent typologically relevant phenomena, along with examples for their illustration and annotations (glosses) and translations applied to these examples (structurally comparable to corpus data), or word lists (structurally comparable to lexical-semantic resources). RDF as a generic representation formalism is thus particularly appealing for this class of resources.
+
+The third major group of resources in the diagram are \textbf{lexical-semantic resources} (`LEXICON', \ref{figI18nLOD}), i.e., resources focusing on the general meaning of words and the structure of semantic concepts. 
+These represent by far the most established type of linguistic resources in the LD context: They have been of inherent interest to the Semantic Web community, and hence a long tradition in this regard, going back to earliest attempts to integrate WordNet into the SW world \citep{gangemi2003ontowordnet}. 
+In the diagram, we distinguish two types of lexical-semantic resources, i.e., \emph{lexical resources} in a strict sense (which provide specifically linguistic information, e.g., grammatical features, as found, e.g., in a dictionary, or in a WordNet), and and \emph{general knowledge bases} (such as classical thesauri or semantic repositories such as YAGO and DBpedia) 
+whose origins lay outside of the stricter boundaries of linguistics or NLP. 
+While the latter do not provide us with grammatical information, they formalize semantic knowledge, and in this respect, they are of immanent relevance for Natural Language Processing tasks such as Named Entity Recognition or Anaphora Resolution. 
 
 \begin{figure*}[t]
  \begin{center}
@@ -30,17 +54,24 @@ Finally, for \textbf{linguistic corpora} (Fig.\ \ref{figI18nLOD}, \textsc{corpor
 
 \subsection{Recent Developments}
 
+Since the publication of the last LLOD cloud diagram at LDL-2013, Sep 2013 in Italy, Pisa, we have continued to gather and to convert data sets, to refine our classification of language resources and encouraged others to contribute, e.g., by organizing LDL-2014 and the associated data challenge (see below).
 
-At the moment, we have 107 data sets, we decided to restrict the cloud to resources whose links are specified in Datahub.io.
+These efforts have met with success such that the number of candidate resources for the cloud has increased substantially, from 65 resources in September 2013 to 107 in April 2014. 
+We thus enforced the constraints imposed on resources in the cloud diagram. As of April 2014, we limit datasets in the cloud diagram to those with links to other LLOD data sets. 
+Applying these stricter filters, we arrive at 68 resources in the new diagram.
+For generating the diagram, we rely on the metadata as provided by Datahub.io, so only datasets are considered whose links with other LLOD data sets are explicitly documented there.
+During diagram generation, we test whether the URLs given for the data are responding. At the moment, we do not, however, validate the information provided there, but a stricter validation routine is envisioned. 
 
-hence linked datasets only
+Among others, novel data sets include resources prepared for LDL-2014 and the data challenge, but also resources that have not been covered by earlier diagram instantiations because they lacked the necessary tags to recognize them as being linguistically relevant. An example for the latter is the the Greek WordNet, whose RDF edition has been released in early 2013,\footnote{
+	\url{http://datahub.io/de/dataset/greek-wordnet}, see \url{http://okfn.gr/2013/01/983/} for a description.
+}
+but also, several thesauri and multilingual vocabularies.
+This provides a partial explanation for the growth of the cloud particular with respect to lexical resources. 
 
-
-The first draft of the LLOD diagram has been sketched ...
-
-Since LDL-2013, the categories have been increasingly clarified
-
-Novel data sets include
+At the same time, the growing number of linked lexical resources also reflects the activities of the W3C Ontology-Lexica Community Group (OntoLex). The OntoLex group is not only closely collaborating with the OWLG, but both also have a considerable overlap in terms of their members, and as for LDL-2013, several LDL-2014 organizers are active in both groups.
+While the OWLG is interested in open linguistic resources in general, the OntoLex group takes a specific focus on lexical resources, culminating in the proposal of a common model for machine-readable lexicons in RDF, the \emph{lemon} model \cite{mccrae2012integrating}. 
+By now, already 41\% of lexical resources (7 out of 17) in the diagram (lemonWordNet, PDEVlemon, Parole/Simple, lemonUby, lemonBabelNet, germlex, DBnary) employ \emph{lemon} or \emph{lemon}-derived vocabularies, so that we see a considerable degree of convergence in this field. 
+The resulting degree of interoperability and visibility arising from the use of shared vocabularies is certainly one of the most concrete achievements of the community activities we aimed to initiate with forming the OWLG, preparing the LLOD diagram and conducting workshops at linguistic, NLP and IT conferences.
 
 \subsection{Behind LDL-2014}
 

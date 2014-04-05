@@ -23,14 +23,24 @@ Cassidy, S.
 \newblock In {\em 5th Joint ISO-ACL/SIGSEM Workshop on Interoperable Semantic
   Annotation (ISA-5)}, Hong Kong, January.
 
-\bibitem[\protect\citename{Chiarcos \bgroup et al.\egroup }to
-  appear]{chiarcos-etal2012-ntrolr}
+\bibitem[\protect\citename{Chiarcos \bgroup et al.\egroup
+  }2013a]{chiarcos-etal2012-ntrolr}
 Chiarcos, C., McCrae, J., Cimiano, P., and Fellbaum, C.
-\newblock (to appear).
+\newblock (2013a).
 \newblock Towards open data for linguistics: Linguistic linked data.
 \newblock In Oltramari, A., Lu-Qin, Vossen, P., and Hovy, E., editors, {\em New
   Trends of Research in Ontologies and Lexical Resources}. Springer,
   Heidelberg.
+
+\bibitem[\protect\citename{Chiarcos \bgroup et al.\egroup
+  }2013b]{chiarcos-etal-2013-ldl-intro}
+Chiarcos, C., Cimiano, P., Declerck, T., and McCrae, J.
+\newblock (2013b).
+\newblock Linguistic linked open data (llod). introduction and overview.
+\newblock In Chiarcos, C., Cimiano, P., Declerck, T., and McCrae, J., editors,
+  {\em Proceedings of the 2nd Workshop on Linked Data in Linguistics
+  (LDL-2013): Representing and linking lexicons, terminologies and other
+  language data}, pages i--xi, Pisa, Italy, Sep.
 
 \bibitem[\protect\citename{Dostert}1955]{dostert1955georgetown}
 Dostert, L.

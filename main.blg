@@ -3,49 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: lrec2014.bst
 Database file #1: bib.bib
-Repeated entry---line 2000 of file bib.bib
- : @conference{wright2004global
- :                             ,
-I'm skipping whatever remains of this entry
-You've used 19 entries,
+You've used 15 entries,
             2494 wiz_defined-function locations,
-            676 strings with 8103 characters,
-and the built_in function-call counts, 8153 in all, are:
-= -- 863
-> -- 287
-< -- 8
-+ -- 94
-- -- 88
-* -- 583
-:= -- 1281
-add.period$ -- 82
-call.type$ -- 19
-change.case$ -- 113
-chr.to.int$ -- 17
-cite$ -- 19
-duplicate$ -- 388
-empty$ -- 656
-format.name$ -- 114
-if$ -- 1776
-int.to.chr$ -- 3
+            653 strings with 7527 characters,
+and the built_in function-call counts, 6404 in all, are:
+= -- 669
+> -- 247
+< -- 6
++ -- 80
+- -- 76
+* -- 463
+:= -- 1027
+add.period$ -- 65
+call.type$ -- 15
+change.case$ -- 91
+chr.to.int$ -- 15
+cite$ -- 15
+duplicate$ -- 298
+empty$ -- 504
+format.name$ -- 96
+if$ -- 1380
+int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 17
-newline$ -- 118
-num.names$ -- 68
-pop$ -- 145
+missing$ -- 13
+newline$ -- 94
+num.names$ -- 56
+pop$ -- 118
 preamble$ -- 1
-purify$ -- 132
+purify$ -- 106
 quote$ -- 0
-skip$ -- 282
+skip$ -- 213
 stack$ -- 0
-substring$ -- 362
-swap$ -- 104
-text.length$ -- 8
+substring$ -- 259
+swap$ -- 75
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 148
+type$ -- 116
 warning$ -- 0
-while$ -- 67
-width$ -- 24
-write$ -- 286
-(There was 1 error message)
+while$ -- 53
+width$ -- 20
+write$ -- 226

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Cygwin) (format=pdflatex 2013.10.26)  4 APR 2014 23:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Cygwin) (format=pdflatex 2013.10.26)  5 APR 2014 19:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -448,19 +448,19 @@ Package: arydshln 2004/08/31 v1.71
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 63.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 55.
  (/usr/share/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
@@ -479,38 +479,34 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 \everyMPtoPDFconversion=\toks31
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 65.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 65.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 57.
  (/usr/share/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 65.
+LaTeX Font Info:    Try loading font information for U+msa on input line 57.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 65.
+LaTeX Font Info:    Try loading font information for U+msb on input line 57.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 65.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 65.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 57.
 
 (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Overfull \hbox (208.11176pt too wide) in paragraph at lines 65--65
- [][] 
- []
-
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 65.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 65.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--65
+Underfull \hbox (badness 10000) in paragraph at lines 57--57
 
  []
 
@@ -536,6 +532,10 @@ Underfull \hbox (badness 2197) in paragraph at lines 19--21
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
+
+Overfull \vbox (3.42433pt too high) has occurred while \output is active []
+
+
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
@@ -557,6 +557,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--46
  []
 
 
+Underfull \vbox (badness 2680) has occurred while \output is active []
+
+
 Overfull \hbox (7.90665pt too wide) in paragraph at lines 63--67
 []
  []
@@ -571,58 +574,119 @@ Underfull \hbox (badness 1895) in paragraph at lines 69--72
 \OT1/ptm/m/n/10 maintained ter-mi-nol-ogy repos-i-to-ries like the ISO
  []
 
-[2]) (./2-llod.tex <llod-colored.png, id=13, 1554.55782pt x 1699.09781pt>
+[2]) (./2-llod.tex
+Underfull \hbox (badness 1789) in paragraph at lines 16--16
+[][]\OT1/ptm/m/n/9 The ex-trac-tion scripts can be found un-der $\OT1/pcr/m/n/9
+ https : / /
+ []
+
+
+Underfull \hbox (badness 2401) in paragraph at lines 36--41
+\OT1/ptm/m/n/10 (`META-DATA' in Fig. 1[], \OT1/ptm/m/sc/10 lan-guage[]descripti
+on\OT1/ptm/m/n/10 ).
+ []
+
+
+Overfull \vbox (3.4464pt too high) has occurred while \output is active []
+
+
+[3]
+Underfull \hbox (badness 1817) in paragraph at lines 42--47
+\OT1/ptm/b/n/10 lexical-semantic re-sources \OT1/ptm/m/n/10 (`LEX-I-CON', 1[]),
+ i.e., re-
+ []
+
+<llod-colored.png, id=18, 1554.55782pt x 1699.09781pt>
 File: llod-colored.png Graphic file (type png)
+ <use llod-colored.png>
+Package pdftex.def Info: llod-colored.png used on input line 52.
+(pdftex.def)             Requested size: 489.38731pt x 534.8816pt.
 
-<use llod-colored.png>
-Package pdftex.def Info: llod-colored.png used on input line 25.
-(pdftex.def)             Requested size: 391.51134pt x 427.91048pt.
-
-Overfull \vbox (2.36pt too high) has occurred while \output is active []
-
- [3]
-Underfull \hbox (badness 1199) in paragraph at lines 100--101
-\OT1/ptm/m/n/10 lated re-sources was ac-com-pa-nied and fa-cil-i-tated by a
- []
-
-[4 <./llod-colored.png>]) (./3-ldl2014.tex
-Underfull \hbox (badness 1275) in paragraph at lines 43--80
-\OT1/ptm/m/n/10 TO LINKED OPEN DATA (Dur[]eo and Wind-houwer)
- []
-
-[5]
-Underfull \hbox (badness 1715) in paragraph at lines 139--141
- []\OT1/ptm/m/n/12 ? \OT1/ptm/m/n/10 Rep-re-sents a type of re-source or a
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+[][]$\OT1/pcr/m/n/9 http : / / datahub . io / de / dataset /
  []
 
 
-Underfull \hbox (badness 2050) in paragraph at lines 139--141
- \OT1/ptm/m/n/10 com-mu-nity cur-rently un-der-rep-re-sented
+Overfull \vbox (3.9998pt too high) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1038) in paragraph at lines 84--85
+[]\OT1/ptm/m/n/10 LDL-2014, col-lo-cated with the 9th In-ter-na-tional Con-
  []
 
-) [6] (./main.bbl
+[4]
+Underfull \vbox (badness 4872) has occurred while \output is active []
+
+ [5 <./llod-colored.png>]
+Underfull \hbox (badness 2894) in paragraph at lines 117--122
+[]\OT1/ptm/m/n/10 LDL-2014 is sup-ported by two re-cently started EU
+ []
+
+) (./3-ldl2014.tex
+Underfull \hbox (badness 1715) in paragraph at lines 123--1
+[]\OT1/ptm/m/n/10 To ac-co-mo-date the im-por-tance of mul-ti-lin-gual-ity and
+ []
+
+[6]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 41.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 48.
+
+Underfull \hbox (badness 1122) in paragraph at lines 48--51
+[]\OT1/ptm/m/n/10 John Philip Mc-Crae, Chris-tiane Fell-baum and Philipp
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 102--102
+[][]$\OT1/pcr/m/n/9 http : / / sabre2012 . infai . org / mlode /
+ []
+
+
+Underfull \hbox (badness 1824) in paragraph at lines 144--152
+\OT1/ptm/b/n/10 Trans-la-tion Re-la-tions \OT1/ptm/m/n/10 by Gilles S[]erraset 
+and An-don
+ []
+
+[8]) (./main.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 4--9
 \OT1/ptm/m/n/10 URL $\OT1/pcr/m/n/10 http : / / www . w3 . org / DesignIssues /
 
  []
 
-) [7] [8] (./main.aux) ) 
+
+Underfull \hbox (badness 1320) in paragraph at lines 20--25
+[]\OT1/ptm/m/n/10 Cassidy, S.  (2010).  An RDF re-al-i-sa-tion of LAF in
+ []
+
+
+Underfull \hbox (badness 2443) in paragraph at lines 20--25
+\OT1/ptm/m/n/10 the DADA An-no-ta-tion Server.  In \OT1/ptm/m/it/10 5th Joint I
+SO-
+ []
+
+[9]) [10
+
+] [11] [12] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 3152 strings out of 493315
- 39988 string characters out of 6143674
- 110682 words of memory out of 5000000
- 6493 multiletter control sequences out of 15000+600000
- 32162 words of font info for 71 fonts, out of 8000000 for 9000
+ 3177 strings out of 493315
+ 40216 string characters out of 6143674
+ 110643 words of memory out of 5000000
+ 6509 multiletter control sequences out of 15000+600000
+ 37642 words of font info for 88 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 42i,10n,26p,1209b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
-r/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fo
-nts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utm
-r8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (8 pages, 740117 bytes).
+ 42i,11n,26p,1198b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</
+usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1
+/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
+></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dis
+t/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times
+/utmri8a.pfb>
+Output written on main.pdf (12 pages, 779259 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 73 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

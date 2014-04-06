@@ -6,18 +6,19 @@ In this regard, the Linked Data paradigm might provide an important step towards
 
 Further, LDL-2014 provides a forum for researchers on natural language processing and semantic web technologies to present case studies and best practices on the exploitation of linguistic resources exposed on the Web for \textbf{Natural Language Processing} applications, or other content-centered applications such as content analytics, knowledge extraction, etc. The availability of massive linked open knowledge resources raises the question how such data can be suitably employed to facilitate different NLP tasks and research questions. Following the tradition of earlier LDL workshops, we encouraged contributions to the Linguistic Linked Open Data (LLOD) cloud and research on this basis. In particular, this pertains to contributions that demonstrate an added value resulting from the combination of linked datasets and ontologies as a source for semantic information with linguistic resources published according to as linked data principles. Another important question to be addressed in the workshop is how Natural Language Processing techniques can be employed to further facilitate the growth and enrichment of linguistic resources on the Web.
 
-The call for papers emphasized the following topics of interest:
+The call for papers emphasized the following topics:
 
 \begin{enumerate}
-\item \textbf{Use cases} and project proposals for the creation, publication or application of linguistic data collections that are linked with other resources
+\item \textbf{Use cases} %and project proposals 
+for creating or publishing linked linguistic data collections
 \item \textbf{Modelling} linguistic data and metadata with OWL and/or RDF
-\item \textbf{Ontologies} for linguistic data and metadata collections as well as cross-lingual retrieval
+\item \textbf{Ontologies} for linguistic data and metadata collections as well as for cross-lingual retrieval
 \item Description of \textbf{data sets} following Linked Data principles
 \item \textbf{Applications of such data}, other ontologies or linked data from any subdiscipline of linguistics % (may include work in progress or project descriptions)
-\item \textbf{NLP\&LOD}: Application and applicability of (Linguistic) Linked Open Data in NLP / NLP contributions to (Linguistic) Linked Open Data
+\item \textbf{NLP\&LLOD}: Application and applicability of (Linguistic) Linked Open Data in NLP / NLP contributions to (Linguistic) Linked Open Data
 \item Challenges of \textbf{multilinguality} and \textbf{collaboratively constructed open resources} % and the use of LOD %and collaboratively constructed open resources 
 for knowledge extraction, machine translation and other NLP tasks.
-\item \textbf{Legal and social aspects} of Linguistic Linked Open Data
+\item \textbf{Legal and social aspects} of (L)LOD
 \item \textbf{Best practices} for the publication and linking of multilingual knowledge resources
 \end{enumerate}
 
@@ -26,7 +27,7 @@ Along with regular workshop submissions, we invited contributions to the associa
 In total, we received 19 submissions in response to our calls, including 5 data set descriptions for the associated data challenge. Regular submissions were reviewed by at least 3 
 % actually 4, IMHO
 members of the program committee. 
-On the basis of these reviews, we decided to accept 6 papers as full papers and 4 as short papers.
+On this basis, we accepted 6 submissions as full papers and 4 as short papers.
 
 The 10 accepted papers address a wide range of problems in the area of NLP and (Linguistic) Linked Open Data, pertaining to modeling, representation, analysis and publishing of various 
 data or metadata.
@@ -74,13 +75,13 @@ Although most of the following papers also involve lexical resources, they are s
 	Robert Forkel introduces \textbf{The Cross-Linguistic Linked Data project},
 	an ongoing initiative and its infrastructure aiming towards establishing a platform 
 	for interoperability among various language resources assembled in typological research. 
-	Linguistic Linked Open Data has long played an important role as publishing strategy for 
-	typological datasets, and identified as such since LDL-2012, but here, a unified 
+	The important role of Linguistic Linked Open Data has long been recognized as publishing strategy for 
+	typological datasets \citep{ldl2012}, but here, a unified 
 	publication platform is described which may have a considerable effect on the typological publicating practice.
 	
 \subsection{Metadata}
 
-	In our classification, metadata refers to different kinds of information provided \emph{about} another resource, here, language resources, linguistic terminology and multimedia annotations.
+	As used here, metadata refers to information provided \emph{about} another resource, including language resources, linguistic terminology and multimedia contents.
 	
 	\textbf{From CLARIN Component Metadata to Linked Open Data} by 
 	Matej Durco and Menzo Windhouwer describes the conversion from CMDI resource descriptions to LOD. 
@@ -107,33 +108,11 @@ This challenge required submissions of new or substantially updated linked datas
 The following criteria were applied: 
 
 \begin{enumerate}[1.]
-\item Availability
-	\begin{enumerate}[a.]
-	\item Use of Linked Data and RDF.
-	\item Hosted on a publicly accessible server and be available both during the period of the evaluation and beyond.
-	\item Use of an open license.
-	\end{enumerate}
-\item Resource Quality
-	\begin{enumerate}[a.]
-	\item Represents useful linguistically or NLP-relevant information.
-	\item Reuses relevant standards and models.
-	\item Contains complex, non-trivial information, e.g., multiple levels  of annotation.
-	\end{enumerate}
-\item Linking
-	\begin{enumerate}[a.]
-	\item Links to external resources.
-	\item Reuse of existing properties and categories.
-	\end{enumerate}
-\item Impact/usefulness of the resource
-	\begin{enumerate}[a.]
-	\item Relevant and likely to be reused by many researchers in NLP and beyond.
-	\item Uses linked data to improve the quality of and access to the resource.
-	\end{enumerate}
-\item Originality
-	\begin{enumerate}[a.]
-	\item Represents a type of resource or a community currently underrepresented in (L)LOD cloud activities
-	\item Facilitates novel and unforeseen applications or use cases (as described by the authors) enabled through Linked Data technology.
-	\end{enumerate}
+\item \emph{Availability}, i.e. (a) whether the resource uses Linked Data and RDF, (b) whether it is hosted on a publicly accessible server and is available both during the period of the evaluation and beyond, and (c) whether it uses an open license.
+\item \emph{Quality}, i.e. (a) whether the resource represents useful linguistically or NLP-relevant information, (b) whether it reuses relevant standards and models, and (c) wheter it contains complex, non-trivial information (e.g., multiple levels of annotation, manually validated analyses).
+\item \emph{Linking}, i.e., (a) wheter the resource contains links to external resources, and (b) whether it reuses existing properties and categories.
+\item \emph{Impact/usefulness} of the resource, i.e., (a) whether it is relevant and likely to be reused by many researchers in NLP and beyond, and (b) whether it uses linked data to improve the quality of and access to the resource.
+\item \emph{Originality}, i.e., (a) whether the data set represents a type of resource or a community currently underrepresented in (L)LOD cloud activities, or (b) whether the approach facilitates novel and unforeseen applications or use cases (as described by the authors) enabled through Linked Data technology.
 \end{enumerate}
 
 \noindent	
@@ -141,7 +120,7 @@ This year there were five accepted submissions to the challenge.
 Every challenge committee member provided a ranking of these resources, and the average rank was taken as decisive criterion.
 In this process, we chose two joint winners and one highly commended paper. 
 
-The winners this year 
+The winners 
 were \textbf{DBnary: Wiktionary as Linked Data for 12 Language Editions with Enhanced 
 Translation Relations} by Gilles Sérraset and Andon Tchechmedjiev and \textbf{Linked-data 
 based domain-specific sentiment lexicons} by Gabriela Vulcu, Raul Lario Monje, 
@@ -178,7 +157,7 @@ for a number of works in linguistics and natural language processing.
 
 \subsection{Invited Talks}
 
-In addition to regular papers and dataset descriptions, LDL-2014 features two invited speakers, Piek Vossen, VU Amsterdam, The Netherlands, and Gerard de Melo, Tsinghua University, China.
+In addition to regular papers and dataset descriptions, LDL-2014 features two invited speakers, Piek Vossen, VU Amsterdam, and Gerard de Melo, Tsinghua University.
 
 \smallskip
 
@@ -192,8 +171,7 @@ The Inter-Lingual-Index, originally developed in the context of EuroWordNet, pro
 
 \textbf{Gerard de Melo} is an Assistant Professor at Tsinghua
  University, where he is heading the Web Mining and Language Technology
- group. Previously, he was a post-doctoral researcher at UC Berkeley
- working in the ICSI AI group, and a doctoral candidate at the Max Planck
+ group. Previously, he was a post-doctoral researcher at the the ICSI AI group of the UC Berkeley, and a doctoral candidate at the Max Planck
  Institute for Informatics.
 
 In his talk, Gerard de Melo will describe the transition \textbf{From Linked Data to Tightly Integrated Data}. 

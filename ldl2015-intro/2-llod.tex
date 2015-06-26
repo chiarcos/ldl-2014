@@ -51,37 +51,59 @@ While the latter do not provide us with grammatical information, they formalize 
 % \includegraphics[width=0.97\textwidth]{images/llod}
  \includegraphics[width=1.0\textwidth]{llod-colored.png}
  \end{center}
-\caption{Linguistic Linked Open Data cloud as of April 2014.}
+\caption{Linguistic Linked Open Data cloud as of June 2015 [TO BE UPDATED]}
 \label{figI18nLOD}
 \end{figure*}
 
 \subsection{Recent Developments}
 
-Since the publication of the last LLOD cloud diagram at LDL-2013, Sep 2013 in Italy, Pisa, we have continued to gather and to convert data sets, to refine our classification of language resources and encouraged others to contribute, e.g., by organizing LDL-2014 and the associated data challenge (see below).
+Since we initiated the LDL workshop series and the LLOD cloud in 2012, we have seen a great rise of interest in the matter from the side of linguistics, Natural Language Processing and Semantic Web communities. The topic gained a lot of attention in the language resource community since the First Workshop on Linked Data in Linguistics in 2012, e.g., at LREC-2014, where Nicolatta Calzolari identified Linguistic Linked Open Data as `the new hot topic in our community' in the closing ceremony.
 
-These efforts have met with success such that the number of candidate resources for the cloud has increased substantially, from 65 resources in September 2013 to 107 in April 2014. 
-We thus enforced the constraints imposed on resources in the cloud diagram. As of April 2014, we limit datasets in the cloud diagram to those with links to other LLOD data sets. 
-Applying these stricter filters, we arrive at 68 resources in the new diagram.
-For generating the diagram, we rely on the metadata as provided by Datahub.io, so only datasets are considered whose links with other LLOD data sets are explicitly documented there.
-During diagram generation, we test whether the URLs given for the data are responding. At the moment, we do not, however, validate the information provided there, but a stricter validation routine is envisioned. 
+\paragraph{Resources} 
+LREC-2014 also hosted the last instantiation of the LDL workshop series in May 2014 in Reykjavik, Iceland, which was accompanied by a datathon in orer to encourage providing (open) linguistic resources as Linked Data. 
+Since then, the community has continued to gather and to convert data sets, we kept on refining our classification of language resources and encouraged others to contribute, e.g., by organizing various events on Linked Data and LLOD.
+These efforts have met with success such that the number of candidate resources for the cloud has increased substantially, from 68 resources in April 2014 to $<$HOWMANY$>$ in June 2015. Along with this growth, we thus continued to enforce quality constraints imposed on resources in the cloud diagram. As of April 2014, we limited datasets in the cloud diagram to those with links to other LLOD data sets, as of June 2015, we require that resources in the diagram are \emph{linguistically relevant}.
 
-Among others, novel data sets include resources prepared for LDL-2014 and the data challenge, but also resources that have not been covered by earlier diagram instantiations because they lacked the necessary tags to recognize them as being linguistically relevant. An example for the latter is the Greek WordNet (RDF edition released in early 2013),\footnote{
-	\url{http://datahub.io/de/dataset/greek-wordnet}, cf. \url{http://okfn.gr/2013/01/983/}.
-}
-but also several thesauri and multilingual vocabularies.
-This partially explains the growth of the cloud particular with respect to lexical resources. 
+\paragraph{Terminology}
+For about a year, the OWLG has struggled to provide a consensus definition for LOD resources to be included in the LLOD cloud diagram, a tideous process given the great multidisciplinary character and the resulting heterogeneity of the Open Linguistics Working Group. 
+For practical reasons, the cloud diagram must not be limited to resources developed by academic circles with linguistic or NLP background (i.e., `linguistic resources' in a strict sense), but should extend to resources actively used by these groups (as well as others interested in this kind of material. We thus require resources to be `linguistically relevant' rather than being inherently `linguistic'.
 
-At the same time, the growing number of linked lexical resources also reflects the activities of the W3C Ontology-Lexica Community Group (OntoLex). The OntoLex group is not only closely collaborating with the OWLG, but both also have a considerable overlap in terms of their members, and as for LDL-2013, several LDL-2014 organizers are active in both groups.
+As a consensus, we arrived at a two-stage model which provides verifiable criteria for inclusion: 
+A dataset is \emph{linguistically relevant} if it provides or  describes language data that can be used for the purpose of linguistic research or natural language processing. Besides linguistic resources in  a strict sense (1), this includes other resources (2) that can be used for  annotating, enriching, retrieving or classifying language resources.
+\begin{enumerate}[(1)]
+\item \textbf{Linguistic resources in a strict sense} are resources which  have been intentionally created for the purpose of linguistic research or natural language processing, and which contain linguistic classifications, annotations, or analyses or have been used to provide such information about language data.
+\item \textbf{Other linguistically relevant} resources include all other  resources used for linguistic research or natural language processing,  but not necessarily created for this purpose, e.g., large collections of  texts such as news articles, encyclopedic or terminological knowledge  or general knowledge bases such as DBpedia, or metadata collections, but only if they include incoming or outgoing links with at least one linguistic resource in a strict sense. 
+\end{enumerate}
+
+Condition (1) can be verified by associated publications at linguistic/NLP conferences, journals or inclusion in metadata collections such as the LREMap. 
+Condition (2) can be verified by the existence of links between a resource (whose linguistic relevance is to be confirmed) and resources fulfilling condition (1).
+
+We are currently working towards aligning the resource classification with those of metadata repositories such as META-SHARE and LREMap.
+
+\paragraph{Infrastructure}
+For generating the diagram, we originally relied on the metadata as provided by Datahub.io, so only datasets are considered whose links with other LLOD data sets are explicitly documented there.
+During diagram generation, we test whether the URLs given for the data are responding. At the moment, we do not, however, validate the information provided there, but a stricter validation routine is envisioned. $<$TOCHECK: Status?$>$
+In the context of the European LIDER project and LD4LT W3C Community Group, a linked-data-based metadata repository for linguistic resources has been developed, linghub (URL!!!! publication???), which is currently populated from Datahub.io. Although Datahub is sill being recommended for entering and managing metadata, 
+resources in the cloud diagram are currently linked with linghub, as, in the longer perspective, and after thorough review by the community, linghub is planned to replace datahub.io.
+
+Furthermore, we set up a website dedicated to linguistic linked open data, \url{linguistic-lod.org}, where \emph{dynamic versions} of the diagram are hosted as well as any information about the current and future LDL workshops. This website is going to replace the current LLOD-related pages at the OWLG website.
+
+\paragraph{Community}
+Following a trend already observed in 2014, the fastest-growing class of LLOD resources are lexical-conceptual resources. 
+Partially, this reflects the increasing reception of the \emph{lemon} vocabulary in the community, but also the activities of the W3C Ontology-Lexica Community Group (OntoLex). The OntoLex group is not only closely collaborating with the OWLG, but both also have a considerable overlap in terms of their members, and as usual since LDL-2013, several organizers of LDL-2015 are active in both groups.
 While the OWLG is interested in open linguistic resources in general, the OntoLex group takes a specific focus on lexical resources, culminating in the proposal of a common model for machine-readable lexicons in RDF, the \emph{lemon} model \cite{mccrae2012integrating}. 
+
+\paragraph{Vocabularies -- TO BE UPDATED}
+
 By now, already 41\% of lexical resources (7 out of 17) in the diagram (lemonWordNet, PDEVlemon, Parole/Simple, lemonUby, lemonBabelNet, germlex, DBnary) employ \emph{lemon} or \emph{lemon}-derived vocabularies, so that we see a considerable degree of convergence in this field. 
 The resulting degree of interoperability and visibility arising from the use of shared vocabularies is certainly one of the most concrete achievements of the community activities we aimed to initiate with forming the OWLG, preparing the LLOD diagram and conducting workshops at linguistic, NLP and IT conferences.
 
-\subsection{Organizing LDL-2014}
+\subsection{Organizing LDL-2015 -- TO BE UPDATED}
 
-The LDL workshop series and LDL-2014 are organized by the Open Linguistics Working Group 
+The LDL workshop series and LDL-2015 are organized by the Open Linguistics Working Group 
 to bring together researchers from various fields of linguistics, NLP, and IT to present and discuss principles, case studies, and best practices for representing, publishing and linking linguistic data collections, and aims to facilitate the exchange of technologies, ideas and resources across discipline boundaries, that (to a certain extend) find a material manifestation in the emerging LLOD cloud.
 
-LDL-2014, collocated with the 9th International Conference on Language Resources and Evaluation (LREC-2014), May 2014, Reykjavik, Iceland, is the third workshop on Linked Data in Linguistics following LDL-2012 (March 2012 in Frankfurt am Main, Germany), LDL-2013 (Sep 2013 in Pisa, Italy), as well as more specialized events such as the workshops on Multilingual Linked Open Data for Enterprises (MLODE-2012: Sep 2012 in Leipzig, Germany), and Natural Language Processing and Linked Open Data (NLP\&LOD-2013: Sep 2013 in Hissar, Bulgaria), and the theme session on Linked Data in Linguistic Typology (at the 10th Biennial Conference of the Association for Linguistic Typology, ALT-2013, Aug 2013 in Leipzig, Germany), as well as presentations, panels and informal meetings at various conferences.
+LDL-2015, collocated with the 9th International Conference on Language Resources and Evaluation (LREC-2014), May 2014, Reykjavik, Iceland, is the third workshop on Linked Data in Linguistics following LDL-2012 (March 2012 in Frankfurt am Main, Germany), LDL-2013 (Sep 2013 in Pisa, Italy), as well as more specialized events such as the workshops on Multilingual Linked Open Data for Enterprises (MLODE-2012: Sep 2012 in Leipzig, Germany), and Natural Language Processing and Linked Open Data (NLP\&LOD-2013: Sep 2013 in Hissar, Bulgaria), and the theme session on Linked Data in Linguistic Typology (at the 10th Biennial Conference of the Association for Linguistic Typology, ALT-2013, Aug 2013 in Leipzig, Germany), as well as presentations, panels and informal meetings at various conferences.
 
 LDL-2014 is organized in the context of two closely related community efforts, the \emph{Open Linguistics Working Group} (OWLG), and the \emph{W3C Ontology-Lexica Community Group} (OntoLex), and supported by two recently started EU projects, \emph{LIDER}, and \emph{QTLeap}.
 
@@ -112,9 +134,7 @@ In order to further contribute to the integration of the field, their organizers
 The \textbf{Ontology-Lexica Community (OntoLex) Group}\footnote{\url{http://www.w3.org/community/ontolex}} was founded  in September 2011 as a W3C Community and Business Group. It aims to produce specifications for a lexicon-ontology model that can be used to provide rich linguistic grounding for domain ontologies.
 Rich linguistic grounding include the representation of morphological, syntactic properties of lexical entries as well as the syntax-semantics interface, i.e., the meaning of these lexical entries with respect to the ontology in question. An important issue herein will be to clarify how extant lexical and language resources can be leveraged and reused for this purpose. As a byproduct of this work on specifying a lexicon-ontology model, it is hoped that such a model can become the basis for a web of lexical linked data: a network of lexical and terminological resources that are linked according to the Linked Data Principles forming a large network of lexico-syntactic knowledge.
 
-The OntoLex W3C Community Group has been working on realizing a proposal for a standard ontology lexicon model, currently discussed under the the designation \emph{lemon}. By now, the core specification of the model is almost complete, the group started to develop additional modules for specific tasks and use cases, and some of these are presented at LDL-2014.
-
-As mentioned above, LDL-2014 is supported by two recently started EU Projects.
+Like LDL-2014, LDL-2015 is supported by two recently started EU Projects.
 The project \textbf{Linked Data as an Enabler of Cross-Media and Multilingual Content Analytics for Enterprises Across Europe} (LIDER) aims to provide an 
 ecosystem for the establishment of linguistic linked open data, as well as media resources metadata, for a free and open exploitation of such resources in 
 multilingual, cross-media content analytics across Europe. 

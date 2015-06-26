@@ -1,0 +1,223 @@
+%
+% File acl2015.tex
+%
+% Contact: car@ir.hit.edu.cn, gdzhou@suda.edu.cn
+%%
+%% Based on the style files for ACL-2014, which were, in turn,
+%% Based on the style files for ACL-2013, which were, in turn,
+%% Based on the style files for ACL-2012, which were, in turn,
+%% based on the style files for ACL-2011, which were, in turn, 
+%% based on the style files for ACL-2010, which were, in turn, 
+%% based on the style files for ACL-IJCNLP-2009, which were, in turn,
+%% based on the style files for EACL-2009 and IJCNLP-2008...
+
+%% Based on the style files for EACL 2006 by 
+%%e.agirre@ehu.es or Sergi.Balari@uab.es
+%% and that of ACL 08 by Joakim Nivre and Noah Smith
+
+\documentclass[11pt]{article}
+\usepackage{acl2015}
+\usepackage{times}
+\usepackage{url}
+\usepackage{latexsym}
+
+%\setlength\titlebox{5cm}
+
+% You can expand the titlebox if you need extra space
+% to show all the authors. Please do not make the titlebox
+% smaller than 5cm (the original size); we will check this
+% in the camera-ready version and ask you to change it back.
+
+%%%%%%%%%%%%%%%%%%
+% user additions %
+%%%%%%%%%%%%%%%%%%
+
+
+%% packages
+
+\usepackage{graphicx}	% for eps graphics
+\usepackage{epstopdf}	% for pdflatex
+
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{enumerate}
+\usepackage[utf8]{inputenc}
+\usepackage{arydshln} % the \hdashline and \cdashline commands which are the dashed counterparts of \hline and \cline
+
+%% commands
+
+\def\citep{\cite}
+\def\citet{\newcite}
+
+\newcommand{\todo}[1]{\footnote{\textbf{TODO:} #1 }}
+\newcommand{\onto}[1]{\texttt{\small #1}}
+\newcommand{\word}[1]{\textsl{#1}}
+\newcommand{\textem}[1]{\emph{#1}}
+\newcommand{\tablesize}{\footnotesize}
+\newcommand{\urly}{\tt}
+\newcommand{\ign}[1]{}
+
+%%%%%%%%%%%
+% Content %
+%%%%%%%%%%%
+
+\title{Linked Data in Linguistics 2015. Introduction and Overview}
+
+\author{Christian Chiarcos \\
+  Goethe-Universität Frankfurt, Germany\\
+  {\tt chiarcos@uni-frankfurt.de} \\
+  \And 
+  Philipp Cimiano\\
+  Universität Bielefeld, Germany\\
+  {\tt cimiano@cit-ec.uni-bielefeld.de}\\ 
+  \And
+  Nancy Ide\\
+  Vassar College\\
+  {\tt ide@cs.vassar.edu}\\
+  \And
+  John P. McCrae \\
+  Universität Bielefeld, Germany\\
+  {\tt jmcrae@cit-ec.uni-bielefeld.de}\\ 
+  \And
+  Petya Osenova\\
+  University of Sofia, Bulgaria\\
+  {\tt petya@bultreebank.org}
+}
+  
+\date{}
+
+\input{0-abstract}
+
+\begin{document}
+
+\maketitleabstract
+
+\input{1-background}
+\input{2-llod}
+\input{3-ldl2015}
+
+\section*{Acknowledgements}
+
+We thank the organizers of ACL-IJCNLP 2015, the 53rd Annual Meeting of the Association of Computational Linguistics and the 7th Joint Conference on Natural Language Processing of the Asian Federation of Natural Language Processing, for hosting and supporting LDL-2015. 
+For many in the community behind, the intersection of Natural Language Processing and Linked Data/Semantic Web technologies has always been at the very heart of LDL workshops, and we are very happy to demonstrate current and prospective benefits of Linked Data for NLP at the prestigeous ACL conference series.
+
+The LDL workshop series and LDL-2015 are organized by the Open Linguistics Working Group (OWLG) of the Open Knowledge Foundation. LDL-2015 is supported by two EU projects, LIDER (Linked Data as an Enabler of Cross-Media and Multilingual Content Analytics for Enterprises Across Europe), as well as QTLeap (Quality Translation with Deep Language Engineering Approaches).
+
+We thank the OWLG and its members for active contributions to the LLOD cloud, to the workshop and beyond. In particular, we have to thank our contributors, our co-organizers, the committee and the organizers of the data challenge for their invaluable work and engagement.
+
+\bibliographystyle{acl2015}
+\bibliography{bib}
+
+\newpage
+
+\begin{figure*}[t]
+\begin{minipage}{\textwidth}
+\section*{LDL-2015 Organizing Committee}
+
+\smallskip
+
+Christian Chiarcos (Goethe-Universität Frankfurt am Main, Germany)
+
+Philipp Cimiano (Universität Bielefeld, Germany)
+
+Nancy Ide (Vassar College, US)
+
+John McCrae (Universität Bielefeld, Germany)
+
+Petya Osenova (University of Sofia, Bulgaria)
+
+\bigskip
+
+\section*{LDL-2015 Program Committee}
+
+\smallskip
+
+
+\todo{ this was the old list:
+
+	Eneko Agirre (University of the Basque Country, Spain)
+
+	Guadalupe Aguado (Universidad Politécnica de Madrid, Spain)
+
+	Peter Bouda (Interdisciplinary Centre for Social and Language Documentation, Portugal)
+
+	Steve Cassidy (Macquarie University, Australia)
+
+	Damir Cavar (Eastern Michigan University)
+
+	Eric Charton (Ecole Polytechnique de Montréal, Canada)
+
+	Walter Daelemans (University of Antwerp, Belgium)
+
+	Ernesto William De Luca (University of Applied Sciences Potsdam, Germany)
+
+	Gerard de Melo (University of California at Berkeley)
+
+	Thierry Declerck (Deutsches Forschungszentrum für Künstliche Intelligenz, Germany)
+
+	Dongpo Deng (Institute of Information Sciences, Academia Sinica, Taiwan)
+
+	Alexis Dimitriadis (Universiteit Utrecht, The Netherlands)
+
+	Jeff Good (University at Buffalo)
+
+	Asunción Gómez Pérez (Universidad Politécnica de Madrid, Spain)
+
+	Jorge Gracia (Universidad Politécnica de Madrid, Spain)
+
+	Walther v. Hahn (University of Hamburg, Germany)
+
+	Eva Hajicova (Charles University Prague, Czech Republic)
+
+	Harald Hammarström (Radboud Universiteit Nijmegen, The Netherlands)
+
+	Yoshihiko Hayashi (Osaka University, Japan)
+
+	Sebastian Hellmann (Universität Leipzig, Germany)
+
+	Dominic Jones (Trinity College Dublin, Ireland)
+
+	Lutz Maicher (Universität Leipzig, Germany)
+
+	Pablo Mendes (Open Knowledge Foundation Deutschland, Germany)
+
+	Steven Moran (Universität Zürich, Switzerland/Ludwig Maximilian University, Germany)
+
+	Sebastian Nordhoff (Max Planck Institute for Evolutionary Anthropology, Leipzig, Germany)
+
+	Antonio Pareja-Lora (Universidad Politécnica de Madrid, Spain)
+
+	Maciej Piasecki (Wroclaw University of Technology, Poland)
+
+	Adam Przepiorkowski (IPAN, Polish Academy of Sciences)
+
+	Laurent Romary (INRIA, France)
+
+	Felix Sasaki (Deutsches Forschungszentrum für Künstliche Intelligenz, Germany)
+
+	Andrea Schalley (Griffith University, Australia)
+
+	Marco Tadic (University of Zagreb, Croatia)
+
+	Marieke van Erp (VU University Amsterdam, The Netherlands)
+
+	Daniel Vila (Universidad Politécnica de Madrid, Spain)
+
+	Menzo Windhouwer (Max Planck Institute for Psycholinguistics, Nijmegen, The Netherlands)
+
+	Thierry Declerck (Deutsches Forschungszentrum für Künstliche Intelligenz, Germany)
+
+	Jorge Gracia (Universidad Politécnica de Madrid, Spain)
+
+	Sebastian Nordhoff (Max Planck Institute for Evolutionary Anthropology, Leipzig, Germany)
+
+	John McCrae (Universität Bielefeld, Germany)
+	 
+	Steven Moran (Universität Zürich, Switzerland/Ludwig Maximilian University, Germany)
+	 
+	Petya Osenova (University of Sofia, Bulgaria)
+}
+	
+\end{minipage}
+\end{figure*}
+\pagebreak
+\end{document}

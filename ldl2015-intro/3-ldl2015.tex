@@ -35,7 +35,7 @@ Along with regular workshop submissions, we invited data set descriptions.
 In total, we received 14 submissions which were reviewed by at least 3 members of the program committee. 
 On this basis, we accepted 6 submissions as full papers and 3 as short papers.
 
-The 9 accepted papers address a wide range of problems in the area of NLP and (Linguistic) Linked Open Data, pertaining to modeling resources and resource metadata
+The 9 accepted papers address a wide range of problems in the area of NLP and (Linguistic) Linked Open Data, pertaining to modeling resources and resource metadata, NLP applications of/for LLOD and aspects of resource evaluation and curation. In addition, the workshop will feature an invited talk by Key-Sun Choi, KAIST, Korea.
 
 \subsection{Modelling resources}
 
@@ -44,7 +44,7 @@ Nevertheless, a number of open research questions remains, including possible ex
 
 % (Submission #12), short
 Certainly, WordNet is \emph{the} classical lexical-conceptual resource in the context of LLOD, and different WordNet editions have been provided as Linked Data using the \emph{lemon} vocabulary, already.
-Yet, as Chih-Yao Lee and Shu-Kai Hsieh point out in their paper on `Linguistic Linked Data in Chinese: The Case of Chinese Wordnet', the model does not allow for finer-grained distinction of a word sense, or meaning facets, used in the Chinese Wordnet. Along with these observations, which may motivate an extension of the \emph{lemon} model in the longer perspective, they describe the current status of the LLOD edition of the Chinese WordNet in relation to \emph{lemon} and the ontology proposed by the Global WordNet Association to show how the Chinese Wordnet as Linked Data can be integrated into the LLOD edition of the Global WordNet Grid.
+Yet, as Chih-Yao Lee and Shu-Kai Hsieh point out in their short paper on `Linguistic Linked Data in Chinese: The Case of Chinese Wordnet', the model does not allow for finer-grained distinction of a word sense, or meaning facets, used in the Chinese Wordnet. Along with these observations, which may motivate an extension of the \emph{lemon} model in the longer perspective, they describe the current status of the LLOD edition of the Chinese WordNet in relation to \emph{lemon} and the ontology proposed by the Global WordNet Association to show how the Chinese Wordnet as Linked Data can be integrated into the LLOD edition of the Global WordNet Grid.
 
 % (Submission #3), long
 A different kind of resource is presented by Sebastian Krause, Leonhard Hennig, Aleksandra Gabryszak, Feiyu Xu and Hans Uszkoreit and  their paper on `Sar-graphs: A Linked Linguistic Knowledge Resource Connecting Facts with Language'. Sar-graphs extends relations from existing lexical-conceptual resources (BabelNet, WordNet, UBY and FrameNet) with the linguistic patterns a language can use to express instances of these relations. In addition, they describe a language-independent method to automatically construct novel sar-graph instances. 
@@ -58,262 +58,43 @@ This is due to the fact that relevant metadata records are spread among differen
 At present, the existence of multiple metadata repositories, and the insufficient degree of interoperability between them limits the usability of metadata repositories for the LLOD world. 
 In `Reconciling Heterogeneous Descriptions of Language Resources', McCrae et al. present an attempt to collect and harmonize the metadata of different repositories, making them queriable and browsable in an integrated way on the basis of RDF and linked data technologies. Further, they present an approach to automatically harmonize resources by mapping values of attributes -- such as the type, license or intended use of a resource -- into normalized values, as well as to automatically detect duplicates.
 
-% HIER WEITER
+% (Submission #11), long
+The specific problem of legal metadata, i.e., licensing information, is addressed in `RDF Representation of Licenses for Language Resources'. 
+Here, Víctor Rodriguez-Doncel and Penny Labropoulou address the issue of license declaration for linguistic linked open data and introduce the Open Digital Rights Language (ODRL) core model in applications and examples.
 
+\subsection{Applications and algorithms}
 
-    
+Contributions on applications and algorithms comprise contributions addressing potential and actual use cases of Linked Linguistic Linked Open Data as well as automated procedures to extend existing LLOD resources.
 
-	% (Submission #11), long
-	In their paper on `RDF Representation of Licenses for Language Resources', Víctor Rodriguez-Doncel and Penny Labropoulou address the issue of license declaration for linguistic linked open data and introduce the Open Digital Rights Language (ODRL) core model in applications and examples.
+% Submission #8, data set
+The actual value of linked data is in the linking as it supports integration and discovery of data, but the manual creation of links between datasets is costly and therefore does not scale well. Therefore, automatic linking approaches are of great importance to increase the quality and degree of linking of the Linguistic Linked Data cloud.
+In this context, Siemoneit, McCrae and Cimiano describe with their short paper on `Linking Four Heterogeneous Language Resources as Linked Data' methodology and results of an experiment in the mutual automatic linking of the \emph{European Migration Network (EMN)} glossary, the \emph{Interactive Terminology for Europe} (IATE), BabelNet, and the Manually Annotated Subcorpus (MASC) of the American National Corpus.
 
+A different potential field of application is addressed by McGovern, O'Connor and Wade in their paper on `From DBpedia and WordNet hierarchies to LinkedIn and Twitter', where they study using WordNet and DBpedia information to compare users' descriptions of their knowledge and background on two social media platforms.
 
-
-		
-
-
-\subsubsection{Applications and Algorithms}
-
-	% Submission #8, data set
-		  Benjamin Siemoneit, John Philip McCrae and Philipp Cimiano
-		 Linking Four Heterogeneous Language Resources as Linked Data
-
-		The interest in publishing language resources as linked data is increasing,
-		as clearly corroborated by the recent growth of the Linguistic Linked Data
-		cloud. However, the actual value of data published as linked data is the
-		fact that it is linked across datasets, supporting integration and
-		discovery of data. As the manual creation of links between datasets is
-		costly and therefore does not scale well, automatic linking approaches are
-		of great importance to increase the quality and degree of linking of the
-		Linguistic Linked Data cloud. In this paper we examine an automatic
-		approach to link four different datasets to each other: two terminologies,
-		the \emph{European Migration Network (EMN)} glossary as well as the \emph
-		{Interactive Terminology for Europe} (IATE), BabelNet, and the Manually
-		Annotated Subcorpus (MASC) of the American National Corpus. We describe our
-		methodology, present some results on the quality of the links and summarize
-		our experiences with this small linking exercise We will make sure that the
-		resources are added to the linguistic linked data cloud.
-
-	% (Submission #1), long
-	In their paper on `From DBpedia and WordNet hierarchies to LinkedIn and Twitter', Aonghus McGovern, Alexander O'Connor and Vincent Wade 
-	compare the Extended WordNet Domains and DBpedia lexical resources. The comparison takes the form of an
-	investigation of the relationship between users’ descriptions of their
-	knowledge and background on LinkedIn with their description of the same
-	characteristics on Twitter.
-	%% CC: I actually don't understand the original abstract
-	
-		% (Submission #14), long
-	J. Fernando Sánchez-Rada, Carlos A. Iglesias and Ronald Gil
-	A Linked Data Model for Multimodal Sentiment and Emotion Analysis
-
-		The number of tools and services for sentiment analysis is increasing
-		rapidly. Unfortunately, the lack of standard formats hinders
-		interoperability. To tackle this problem, previous works propose the use of
-		the NIF as both a common semantic format and an API for textual sentiment
-		analysis. However, that approach creates a gap between textual and
-		sentiment analysis that hampers multimodality. This paper presents a
-		multimedia extension of NIF that can be leveraged for multimodal
-		applications. The application of this extended model is illustrated with a
-		service that annotates online videos with their sentiment and the use of
-		SPARQL to retrieve results for different modes.
+% (Submission #14), long
+Finally, Sánchez-Rada, Iglesias and Gil address preliminaries of the application of `A Linked Data Model for Multimodal Sentiment and Emotion Analysis'.
+As in other fields of NLP, the lack of standard formats in sentiment analysis hinders interoperability, a deficit previously address by using the NLP Interchange Format NIF as both a common semantic format and an API for textual sentiment analysis. However, the focus on textual sentiment analysis limits the applicability of this approach to multimodal content, for which the authors propose multimedia extension of NIF that can be leveraged for multimodal applications. 
 
 \subsection{Evaluation and curation}
-		
-	% (Submission #5), long 
-	Livy Real, Fabricio Chalub, Valeria dePaiva, Claudia Freitas and Alexandre Rademaker
-	Seeing is Correcting: curating lexical resources using social interfaces
 
-		This note describes OpenWordnet-PT, an automatically created, manually
-		curated wordnet for Portuguese and introduces the newly developed web
-		interface we are using to speed up its manual curation. OpenWordNet-PT is
-		part of a collection of wordnets for various languages, jointly described
-		and distributed through the Open MultiLingual WordNet and the Global
-		WordNet Association. OpenWordnet-PT has been primarily distributed, from
-		the beginning, as RDF files along with its model description in OWL, and it
-		is freely available for download. We contend the creation of such large,
-		distributed and linkable lexical resources is on the cusp of
-		revolutionizing multilingual language processing to the next truly semantic
-		level. But to get there, there is a need for user interfaces that allow
-		ordinary users and (not only computational) linguists to help in the
-		checking and cleaning up of the quality of the resource. We present our
-		suggestion of one such web interface and describe its features supporting
-		the collaborative curation of the data. This showcases the use and
-		importance of its linked data features, to keep track of information
-		provenance during the whole life-cycle of the RDF resource.
+The papers in this group address issues of curation and evaluation for/using LLOD.
 
-	% Submission #7, data set
+% (Submission #5), long 
+In their paper on `Seeing is Correcting: curating lexical resources using social interfaces', Real et al. describe curation efforts on OpenWordnet-PT, an automatically created Portuguese WordNet and an RDF/OWL-native resource. 
+The authors introduce a web interface designed for efficient manual curation of this data, a user interfaces that allows ordinary users and (not only computational) linguists to help checking and cleaning up of the quality of the resource in a collaborative fashion. They emphasize the importance of linked data in this process, in particular the ability to keep track of provenance information during the whole life-cycle of the RDF resource.
 
-	  EVALution 1.0: an Evolving Semantic Dataset for Training and Evaluation of
-							Distributional Semantic Models
+% Submission #7, data set
+A different aspect of evaluation, namely the creation and use of LLOD resources for evaluating NLP applications, is addressed by Santus et al. in their short paper on `EVALution 1.0: an Evolving Semantic Dataset for Training and Evaluation of Distributional Semantic Models'. 
+The authors introduce EVALution 1.0, a dataset designed for the training and the evaluation of Distributional Semantic Models consisting of almost 7.5K tuples which instantiate several semantic relations between word pairs (including hypernymy, synonymy, antonymy, meronymy) as well as additional information (i.e. relation domain, word frequency, word POS, word semantic field, etc.) that can be used for either filtering the pairs or performing an in-depth analysis of the results. 
 
-			Enrico Santus, Frances Yung, Alessandro Lenci and Chu-Ren Huang
+\subsection{Invited Talk}
 
-		In this paper, we introduce EVALution 1.0, a dataset designed for the
-		training and the evaluation of Distributional Semantic Models (DSMs). This
-		version consists of almost 7.5K tuples, instantiating several semantic
-		relations between word pairs (including hypernymy, synonymy, antonymy,
-		meronymy). The dataset is enriched with a large amount of additional
-		information (i.e. relation domain, word frequency, word POS, word semantic
-		field, etc.) that can be used for either filtering the pairs or performing
-		an in-depth analysis of the results. The tuples were extracted from a
-		combination of ConceptNet 5.0 and WordNet 4.0, and subsequently filtered
-		through automatic methods and crowdsourcing in order to ensure their
-		quality. The dataset is freely downloadable. An extension in RDF format,
-		including also scripts for data processing, is under development.
+In addition to full and short papers/dataset descriptions, LDL-2015 will feature Key-Sun Choi as an invited speaker. Key-Sun Choi is professor of KAIST, Korea, since 1988, where he had been Head of Computer Science Department (2006-2011) and recently founded the KAIST research group on Open Knowledge Convergence (since 2012). Key-Sun Choi has contributed to Department of Knowledge Service Engineering and Graduate School of Information Security in KAIST as a Joint Professor.
 
+He had founded and directed Korterm (Korea Terminology Research Center for Natural Language and Knowledge Engineering, 1998) and Bora (National Research Resource Bank for Language and Annotation, 2003). He had been an invited researcher in NEC C\&C Lab of Japan (1987-1988), a visiting scholar of CSLI of Stanford University (1997), and an invited researcher of NHK Science \& Technology Research Laboratories (2002). His areas of expertise are natural language processing, ontology and knowledge engineering, semantic web and linked data, and their infrastructure including text analytics. He served as President (2009-2010) of AFNLP (Asia Federation of Natural Language Processing), the President (2006) of Korean Cognitive Science Society, and the Secretary of ISO/TC37/SC4 for language resource management standards since 2002. 
 
+His recent works include the deep question answering and its knowledge base construction, linked open data as a partnership of LOD2 (EU FP7 project), Korean DBPedia and its enrichment, and open Korean NLP toolkits. His works also include temporal and spatial entity mining with an application NLP2CAL, multilingual information synchronization in Wikipedia context (M-WikiSync), Korean natural language processing tools including parsers and morphological analyzer (Hannanum), and Semantic Word Net with Korean-Japanese-Chinese common concept structure and vocabularies called CoreNet.  His Korean NLP infrastructure has been a role to boost up the Korean NLP as in KIBS project: KAIST corpora including KAIST Treebank \& POS tagged corpora, Terminology-related language resources, and Korean Q\&A and MT test suite (KS-Urimal and dataset). 
 
+As organizers of LDL-2015, we are happy to welcome Key-Sun Choi as key note speaker to the workshop and look forward for fruitful discussions on the interface of Semantic Web and NLP in Beijing.
 
- 
-
-
-
-
-
-OLD:
-
-
-Taken together, the contributions cover a vast and heterogeneous field, they involve different types of linguistic resources, such as machine-readable lexicons, etymological and diachronic databases, web, movies, and grammar terminology, but also address issues of localization and multilinguality. Our tentative classification, that we apply both to the proceedings and the remainder of this section, is a compromise between a classification on grounds of resource types and prospective applications:
-
-A particularly popular branch of research is concerned with \textbf{modeling lexical-semantic resources} using RDF-based vocabularies and lexicon-to-ontology mappings, most noteably \emph{lemon}. 
-This group of submissions partially overlaps with a surprisingly large number of papers concerned with the modeling of multilingual resources in more academic fields of linguistics, namely \textbf{cross-linguistic studies} in linguistic typology and comparative linguistics.
-A third group of papers involves different conceptions of \textbf{metadata}, i.e., terminology for linguistic categories and language resources, but also annotations to multimedial content.
-Finally, we sketch the contributions to the data set challenge, all of which were concerned with lexical-semantic resources.
-
-\subsection{Modelling Lexical-Semantic Resources with \emph{lemon}}
-
-	In their paper \textbf{Attaching translations to proper lexical senses in DBnary}, 
-	Andon Tchechmedjiev, Gilles Sérasset, Jérôme Goulian and Didier Schwab 
-	present	the current status of the DBnary project: DBnary aims at extracting linked open data from Wiktionaries in various languages, for which 
-	the authors present a similarity technique for disambiguation of linked translations. 
-
-	John Philip McCrae, Christiane Fellbaum and Philipp Cimiano describe their approach on \textbf{Publishing and linking WordNet using \emph{lemon} and RDF} where they
-	propose a strategy for publishing the Princeton WordNet as linked data through an open model. 
-	The advantage of this approach is that it provides linking also to the resources which have been already integrated into WordNet. 	
-
-	The paper \textbf{Releasing genre keywords of Russian movie descriptions as Linked Open Data: An experience report} by Andrey Kutuzov and Maxim Ionov 
-	describes efforts on publishing genre-classified movie keywords as LOD using the \emph{lemon} model. 
-	The resource is also linked to Russian component of the Wiktionary RDF dump created by the DBpedia team.\footnote{
-		\url{http://dbpedia.org/Wiktionary}
-	}
-
-\subsection{Cross-linguistic Studies: Applications in Comparative Linguistics and Typology}
-
-Although most of the following papers also involve lexical resources, they are special in their domain of application, i.e., the study of cross-linguistic and/or diachronic relationships in linguistics.
-
-	In \textbf{Linking etymological databases. A case study in Germanic}, Christian Chiarcos and Maria Sukhareva
-	describe the modeling of etymological dictionaries of various Germanic languages in a machine-readable way as Linguistic Linked Open Data. 
-	The authors adopted \emph{lemon}, and identified several problematic aspects in its application to this kind of data.
-	The work is challenging, since it handles different language stages, but the current model represents a solid basis to discuss possible adjustments of both \emph{lemon} and the authors' approach in order to develop a \emph{lemon}-conformant representation that meets the requirements of diachronic data.
-		
-	More focusing on semantic shift than etymological (phonological) continuity, but operating in a similar setting, 
-	Fahad Khan, Federico Boschetti and Francesca Frontini describe an approach on \textbf{Using \emph{lemon} to model lexical semantic shift in diachronic lexical resources}. 
-	They propose \emph{lemonDIA}, an ontology-based extension of the \emph{lemon} model for representing lexical semantic change in temporal context that formalizes notions of perdurance and temporal anchoring of lexical senses. 
-
-	Coming from the slightly different angle of cross-linguistic language comparison in linguistic typology, the paper 
-	\textbf{Typology with graphs and matrices} by Steven Moran and Michael Cysouw describes how to extract information from LLOD representations of different typological data sets, and how to transform and operate with the extracted information in order to determine associations between syntactic and phonological features.
-
-	Robert Forkel introduces \textbf{The Cross-Linguistic Linked Data project},
-	an ongoing initiative and its infrastructure aiming towards establishing a platform 
-	for interoperability among various language resources assembled in typological research. 
-	The important role of Linguistic Linked Open Data has long been recognized as publishing strategy for 
-	typological datasets \citep{ldl2012}, but here, a unified 
-	publication platform is described which may have a considerable effect on the typological publicating practice.
-	
-\subsection{Metadata}
-
-	As used here, metadata refers to information provided \emph{about} another resource, including language resources, linguistic terminology and multimedia contents.
-	
-	\textbf{From CLARIN Component Metadata to Linked Open Data} by 
-	Matej Durco and Menzo Windhouwer describes the conversion from CMDI resource descriptions to LOD. 
-	As a result, the RDF metadata can be accessed with standard query languages using SPARQL endpoints. 
-
-	In \textbf{Towards a Linked Open Data Rrepresentation of a grammar terms index},
-	Daniel Jettka, Karim Kuropka, Cristina Vertan and Heike Zinsmeister introduce onoing work on creating a Linked Open Data 
-	representation of German grammatical terminology, an effort which nicely complements established efforts to create repositories for linguistic terminology used in language documentation, NLP and the development of machine-readable lexicons. Given the great amount of language-specific terminology, the proposed strategy is also applicable to other languages and their linking may eventually improve the multilingual coverage of linguistic terminology repositories.
-
-	A different kind of metadata is subject to \textbf{A brief survey of multimedia annotation localization on the web of Linked Data} by 
-	Gary Lefman, David Lewis and Felix Sasaki. The authors focus on the localization of multimedia ontologies and Linked Data frameworks for Flickr data. 
-	In this respect, Linguistic Linked Open Data may serve as a mediator between multimedia annotation in social media and the Web of Linked Data. 
-
-\subsection{Data Challenge}
-
-The workshop was associated with an open challenge for the creation of datasets for linguistics according to linked data principles.
-Unlike the preceding Monnet challenge\footnote{
-	\url{http://sabre2012.infai.org/mlode/monnet-challenge}
-} 
-that was organized by the W3C OntoLex community at MLODE-2012, the LDL-2014 was not restricted to the application of the \emph{lemon} format. 
-Nevertheless, all submissions were, indeed, lexical-semantic resources.
- 
-This challenge required submissions of new or substantially updated linked datasets and was evaluated by reviewers on technical grounds. 
-The following criteria were applied: 
-
-\begin{enumerate}[1.]
-\item \emph{Availability}, i.e. whether the resource uses Linked Data and RDF, whether it is hosted on a publicly accessible server and is available both during the period of the evaluation and beyond, and whether it uses an open license.
-\item \emph{Quality}, i.e. whether the resource represents useful linguistically or NLP-relevant information, whether it reuses relevant standards and models, and wheter it contains complex, non-trivial information (e.g., multiple levels of annotation, manually validated analyses).
-\item \emph{Linking}, i.e., wheter the resource contains links to external resources, and whether it reuses existing properties and categories.
-\item \emph{Impact/usefulness} of the resource, i.e., whether it is relevant and likely to be reused by many researchers in NLP and beyond, and whether it uses linked data to improve the quality of and access to the resource.
-\item \emph{Originality}, i.e., whether the data set represents a type of resource or a community currently underrepresented in (L)LOD cloud activities, or whether the approach facilitates novel and unforeseen applications or use cases (as described by the authors) enabled through Linked Data technology.
-\end{enumerate}
-
-\noindent	
-This year there were five accepted submissions to the challenge. 
-Every challenge committee member provided a ranking of these resources, and the average rank was taken as decisive criterion.
-In this process, we chose two joint winners and one highly commended paper. 
-
-The winners 
-were \textbf{DBnary: Wiktionary as Linked Data for 12 Language Editions with Enhanced 
-Translation Relations} by Gilles Sérraset and Andon Tchechmedjiev and \textbf{Linked-data 
-based domain-specific sentiment lexicons} by Gabriela Vulcu, Raul Lario Monje, 
-Mario Munoz, Paul Buitelaar and Carlos A. Iglesias, describing the EuroSentiment 
-lexicon. 
-An outstanding characteristic of the DBnary data is its high degree of maturity (quality, usefulness, linking, availability). 
-The EuroSentiment dataset is specifically praised for its originality and quality, as it represents the \emph{only} manually corrected sentiment lexicon currently available as Linguistic Linked Open Data.
-
-\textbf{Sérraset and Tchechmedjiev} describe the extraction of multilingual data from Wiktionary 
-based on 12 language editions of Wiktionary, and as such represents a large and 
-important lexical resource that should have application in many linguistic areas. 
-\textbf{Vulcu et al.} describe the creation of a lexicon for the EuroSentiment project, which 
-tackles the important field of sentiment analysis through the use of sophisticated 
-linguistic processing. The resource described extends the \textit{lemon} model 
-with the MARL vocabulary to provide a lexicon that is unique in the field of sentiment 
-analysis due to its linguistic sophistication. 
-
-Beyond this, we highly commend the work presented in \textbf{A multilingual semantic network as linked data: Lemon-BabelNet} by
-Maud Ehrmann, Francesco Cecconi, Daniele Vannelle, John P. McCrae, Philipp Cimiano 
-and Roberto Navigli, which describes the expression of BabelNet using the \textit{lemon} 
-vocabulary. BabelNet is one of the largest lexical resources created to date and 
-its linked data version at over 1 billion triples will be one of the largest resources 
-in the LLOD cloud. As such, the clear usefulness of the resource as a target for 
-linking and also the use of the widely-used \textit{lemon} model make this conversion 
-a highly valuable resource for the community as noted by the reviewers. 
-
-Finally, 
-we will note that our two runner-up participants \textbf{PDEV-LEMON: A linked data implementation 
-of the pattern dictionary of English verbs based on the \textit{lemon} model} 
-by  Ismail El Maarouf, Jane Bradbury and Patrick Hanks, and \textbf{Linked Hypernyms Dataset - Generation Framework 
-and Use Cases} by Tomáš Kliegr, Vaclav Zeman and Milan Dojchinovski were also well received as resources that 
-continue to grow the linguistic linked open data cloud and are likely to find applications 
-for a number of works in linguistics and natural language processing.
-
-\subsection{Invited Talks}
-
-In addition to regular papers and dataset descriptions, LDL-2014 features two invited speakers, Piek Vossen, VU Amsterdam, and Gerard de Melo, Tsinghua University.
-
-\smallskip
-
-\textbf{Piek Th.J.M. Vossen} is a professor of computational lexicology at the Vrije Universiteit Amsterdam, The Netherlands. He graduated from the University of Amsterdam in Dutch and general linguistics, where he obtained a PhD in computational lexicology in 1995, and is probably most well-known for being founder and president of the Global WordNet Association.
-
-In his talk, he will describe and elaborate on the application of \textbf{The Collaborative Inter-Lingual-Index for harmonizing WordNets}. 
-The Inter-Lingual-Index, originally developed in the context of EuroWordNet, provides a set of common reference points through which WordNets can be linked with each other across different languages and thereby establishes a semantic layer for the interpretation of text in a multilingual setting. Although devised before the advent of modern Linked Data technology, the applications developed on this basis are inspiring for applications of Linguistic Linked Open Data and we are therefore very happy to welcome Piek for discussions and exchange of ideas.
-
-
-\smallskip
-
-\textbf{Gerard de Melo} is an assistant professor at Tsinghua
- University, where he is heading the Web Mining and Language Technology
- group. Previously, he was a post-doctoral researcher at the the ICSI AI group of the UC Berkeley, and a doctoral candidate at the Max Planck
- Institute for Informatics.
-
-In his talk, Gerard de Melo will describe the transition \textbf{From Linked Data to Tightly Integrated Data}. 
-He argues that the true potential of Linked Data can only be appreciated when extensive cross-linkage and integration leads to an even higher degree of interconnectedness. Gerard compares different approaches on integration into unified, coherent knowledge bases and develops ideas on how to address some remaining challenges that are currently
- impeding a more widespread adoption of Linked Data. 

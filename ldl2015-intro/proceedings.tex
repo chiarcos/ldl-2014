@@ -1,0 +1,96 @@
+\documentclass[8pt,a4paper]{article}
+\usepackage[final]{pdfpages}
+\usepackage{fancyhdr}
+\usepackage[T1]{fontenc}
+\usepackage{setspace}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{graphicx}
+\usepackage{url}
+% citations
+
+%% works
+%\usepackage[authoryear]{natbib} %% should correspond to ACL 2013's \cite (author, year) vs. \shortcite (year)
+\usepackage[numbers]{natbib} %% should correspond to ACL 2013's \cite (author, year) vs. \shortcite (year)
+\newcommand{\citeparg}[2][]{\citep[#1]{#2}}
+
+%% commands
+
+\newcommand{\todo}[1]{}
+\newcommand{\onto}[1]{\texttt{\small #1}}
+\newcommand{\word}[1]{\textsl{#1}}
+\newcommand{\textem}[1]{\emph{#1}}
+\newcommand{\tablesize}{\footnotesize}
+\newcommand{\urly}{\tt}
+\newcommand{\ign}[1]{}
+
+
+\topmargin 70pt
+\oddsidemargin 70pt
+
+\pagestyle{fancy}
+\rfoot{\center\thepage}
+\cfoot{}
+\renewcommand {\headrulewidth}{0pt}
+\renewcommand {\footrulewidth}{0pt}
+
+\begin{document}
+\thispagestyle{empty}
+\input{front.tex}
+\newpage
+\thispagestyle{empty}
+
+\mbox{}
+\vspace{13.25cm}
+
+\noindent Christian Chiarcos, Philipp Cimiano, Nancy Ide, John Philip McCrae, and Petya Osenova (eds.), Proceedings of the 4th Workshop on Linked Data in Linguistics (LDL-2015): Resources and Applications\\
+
+\noindent \copyright 2015 The Association for Computational Linguistics\\
+\noindent and The Asian Federation of Natural Language Processing
+
+\noindent Order copies of this and other ACL proceedings from:\\
+
+\noindent Association for Computational Linguistics (ACL)\\
+\noindent 209 N. Eighth Street\\
+\noindent Stroudsburg, PA 18360\\
+\noindent USA\\
+\noindent Tel: +1-570-476-8006\\
+\noindent Fax: +1-570-476-0860\\
+\noindent acl@aclweb.org\\
+
+\noindent ISBN 978-1-941643-68-6
+
+
+
+%% TODO: intro/preface, toc, content
+% \thispagestyle{empty} % no page number
+% \input{toc.tex} 
+% \newpage
+% \mbox{}
+% \thispagestyle{empty} % no page number
+% \newpage
+% \pagenumbering{roman}
+% \input{preface.tex} 
+% \newpage
+% \mbox{}
+% \newpage
+% \input{pc.tex}
+% \newpage
+% \mbox{}
+% \thispagestyle{empty} % no page number
+% \pagenumbering{arabic}
+% \newpage
+% \includepdfset{pagecommand=\thispagestyle{fancy}}
+% \setcounter{page}{1}
+% \includepdf[fitpaper=true,scale=0.98,pages=-,fitpaper=false]{papers/paper_4.pdf}
+% \includepdf[fitpaper=true,scale=0.98,pages=-,fitpaper=false]{papers/paper_2.pdf}
+% \includepdf[fitpaper=true,scale=0.98,pages=-,fitpaper=false]{papers/paper_5.pdf}
+% \includepdf[fitpaper=true,scale=0.98,pages=-,fitpaper=false]{papers/paper_14.pdf}
+% \includepdf[fitpaper=true,scale=0.98,pages=-,fitpaper=false]{papers/paper_3.pdf}
+% \includepdf[fitpaper=true,scale=0.98,pages=-,fitpaper=false]{papers/paper_13.pdf}
+% \includepdf[fitpaper=true,scale=0.98,pages=-,fitpaper=false]{papers/paper_17.pdf}
+% \includepdf[fitpaper=true,scale=0.98,pages=-,fitpaper=false]{papers/paper_12.pdf}
+% \includepdf[fitpaper=true,scale=0.98,pages=-,fitpaper=false]{papers/paper_6.pdf}
+% \includepdf[fitpaper=true,scale=0.98,pages=-,fitpaper=false]{papers/paper_7.pdf}
+% \includepdf[fitpaper=true,scale=0.98,pages=-,fitpaper=false]{papers/paper_10.pdf}
+% % fitpaper & scale aren't necessary - depends on the paper being submitted.
+\end{document}

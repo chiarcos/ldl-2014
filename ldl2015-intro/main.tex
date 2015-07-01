@@ -64,67 +64,71 @@
 
 %% no idea how to set the authors properly
 
-\author{Christian Chiarcos \\
-  Goethe-Universität Frankfurt, Germany\\
-  {\tt chiarcos@uni-frankfurt.de} \\
-  \And 
-  Philipp Cimiano\\
-  Universität Bielefeld, Germany\\
-  {\tt cimiano@cit-ec.uni-bielefeld.de}\\ 
-  \And
-  Nancy Ide\\
-  Vassar College\\
-  {\tt ide@cs.vassar.edu}\\
-  \And
-  John P. McCrae \\
-  Universität Bielefeld, Germany\\
-  {\tt jmcrae@cit-ec.uni-bielefeld.de}\\ 
-  \And
-  Petya Osenova\\
-  University of Sofia, Bulgaria\\
-  {\tt petya@bultreebank.org}
+\author{
+\setlength{\tabcolsep}{0pt}
+\begin{tabular}{cccccc}
+	\multicolumn{3}{l}{
+		\begin{tabular}{c}
+			Christian Chiarcos \\
+			{\normalfont Goethe-Universität Frankfurt, Germany}\\
+			{\tt chiarcos@uni-frankfurt.de} \\
+		\end{tabular}
+	}	&
+	\multicolumn{3}{r}{
+		\begin{tabular}{c}
+			Philipp Cimiano\\
+			{\normalfont Universität Bielefeld, Germany}\\
+			{\tt cimiano@cit-ec.uni-bielefeld.de}\\ 
+		\end{tabular}
+	} \\\\
+	\multicolumn{1}{c}{
+		\begin{tabular}{c}
+		  Nancy Ide\\
+		  {\normalfont Vassar College, NY}\\
+		  {\tt ide@cs.vassar.edu}\\
+		\end{tabular}
+	} & 
+	\multicolumn{3}{c}{
+		\begin{tabular}{c}
+		  John P. McCrae \\
+		  {\normalfont Universität Bielefeld, Germany}\\
+		  {\tt jmcrae@cit-ec.uni-bielefeld.de}\\ 
+		\end{tabular}
+	} &
+	\multicolumn{2}{c}{
+		\begin{tabular}{c}
+		  Petya Osenova\\
+		  {\normalfont University of Sofia, Bulgaria}\\
+		  {\tt petya@bultreebank.org}	
+		\end{tabular}
+	}
+\end{tabular}
+\setlength{\tabcolsep}{6pt} % = default
 }
 
-% doesn't work
-% \author{
-% \begin{tabular}{cccccc}
-% \multicolumn{2}{c}{
-% \begin{tabular}{c}
-% Christian Chiarcos \\
+
+%% regular formatting: too dense
+% \author{Christian Chiarcos \\
   % Goethe-Universität Frankfurt, Germany\\
   % {\tt chiarcos@uni-frankfurt.de} \\
-% \end{tabular}
-% } &
-% \multicolumn{2}{c}{
-% \begin{tabular}{c}
+  % \And 
   % Philipp Cimiano\\
   % Universität Bielefeld, Germany\\
   % {\tt cimiano@cit-ec.uni-bielefeld.de}\\ 
-% \end{tabular}
-% } &
-% \multicolumn{2}{c}{
-% \begin{tabular}{c}
+  % \And
   % Nancy Ide\\
-  % Vassar College, NY\\
+  % Vassar College\\
   % {\tt ide@cs.vassar.edu}\\
-% \end{tabular}
-% } \\
-% \multicolumn{3}{c}{
-% \begin{tabular}{c}
+  % \And
   % John P. McCrae \\
   % Universität Bielefeld, Germany\\
   % {\tt jmcrae@cit-ec.uni-bielefeld.de}\\ 
-% \end{tabular}
-% } &
-% \multicolumn{3}{c}{
-% \begin{tabular}{c}
+  % \And
   % Petya Osenova\\
   % University of Sofia, Bulgaria\\
   % {\tt petya@bultreebank.org}
-% \end{tabular}
 % }
-% }
-  
+
 \date{}
 
 \begin{document}
